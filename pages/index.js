@@ -35,15 +35,23 @@ let slides = [
 // Il nostro team
 let members = [
     {
-        name: "",
-        role: "",
-        description: "",
-        description1: "",
-        imageUrl: "",
-        email: "",
-        phone: '',
+        name: "Alfonso il Grosso",
+        role: "DIRETTORE",
+        description: "I love work hard",
+        description1: "We need to belive in something to have hope... The Dreams!",
+        imageUrl: "/images/alfonso.png",
+        email: "alfonso123.grosso@gmail.it",
+        phone: '555 555-555',
     },
-
+    {
+        name: "Vallentino Roso",
+        role: "INGEGNIERE",
+        description: "I love geometry",
+        description1: "With geometry we can make the Impossible!!",
+        imageUrl: "/images/vallentino.png",
+        email: "vallentino688.roso@gmail.it",
+        phone: '555 636 363',
+    },
 ]
 
 
@@ -53,16 +61,19 @@ const testimonials = [
 
 
 let menu = [
-    { title: '', url: '/' },
-
+    { title: 'Chi siamo', url: '/chi-siamo' },
+    { title: 'Contatti', url: '/contatti' },
+    { title: 'Dove siamo', url: '/dove-siamo' },
+    { title: 'Privacy', url: '/privacy' },
+    { title: 'Trasparenza', url: '/trasparenza' },
 ]
 
 let prodotti = [
     {
-        title: "",
-        category: "",
-        description: "",
-        immagineUrl: "",
+        title: "The mushroom forest",
+        category: "Paesaggio fantasy",
+        description: "Il nostro sognatore ci ha chiesto di realizzare una foresta incatanta fatta di funghi giganti, poichè amante di Minecraft, e il suo bioma preferito è proprio questo..",
+        immagineUrl: "/images/foresta-di-funghi.jpg",
     },
 
 ]
@@ -70,25 +81,21 @@ let prodotti = [
 
 let trasporti = [
     {
-        title: "elicottero",
-        category: "",
-        description: "",
+        title: "Elicottero",
+        category: "90€ andata e ritorno",
+        description: "Un mezzo efficace e sicuro per fare un breve tratto dalla costa al tuo sogno",
         immagineUrl: "",
     }
 ]
 
 let liste = [
-    { elemento: "er" },
-    { elemento: "er" },
-    { elemento: "er" },
-    { elemento: "er" },
-    { elemento: "er" },
-
+    { elemento: "epoca romana" },
+    { elemento: "epoca vittoriana" }
 ]
 
 let liste2 = [
     { elemento: "scenografia fantasy" },
-
+    { elemento: "scenografia film" }
 ]
 
 
@@ -125,9 +132,9 @@ export default function Home({ datiArticoli }) {
                 products={trasporti}
             />
 
-            <Paragraph title="Prezzi" sx={{textAlign: 'center'}}>
+            <Paragraph title="Prezzi" sx={{ textAlign: 'center' }}>
                 <Grid container
-                    sx={{ p: 3}}
+                    sx={{ p: 3 }}
                 >
                     <Grid item>
                         <Paragraph title="epoca">
@@ -172,4 +179,3 @@ export async function getStaticProps() {
         },
     }
 }
-
