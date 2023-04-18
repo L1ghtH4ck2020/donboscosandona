@@ -26,8 +26,6 @@ export default function Layout({ children }) {
                     />
                     <meta name="og:title" content={siteTitle} />
 
-                    <link rel="icon" href="/island.png" />
-
                     <meta name="twitter:card" content="summary_large_image" />
                 </Head>
 

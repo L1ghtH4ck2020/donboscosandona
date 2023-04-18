@@ -42,7 +42,7 @@ export default function Footer(props) {
                             <Typography component="h1" color="White" >
                                 {
                                     props.socials.map((social) => (
-                                        <Container sx={{ padding: "0.5rem" }}>
+                                        <Container sx={{ padding: "0.5rem",  }}>
                                             <Link
                                                 color="inherit"
                                                 noWrap
@@ -50,7 +50,7 @@ export default function Footer(props) {
 
                                                 variant="body2"
                                                 href={social.url}
-                                                sx={{ p: 1, flexShrink: 0, }}
+                                                sx={{ p: 1, flexShrink: 0,textDecoration: 'none' }}
                                             >
                                                 <img src={social.imageUrl} width="20" />
                                                 {social.title}
