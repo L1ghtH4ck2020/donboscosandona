@@ -13,9 +13,9 @@ import Products from '/components/Products'
 import Testimonials from '/components/Testimonials'
 import Team from '/components/Team'
 import Post from '/components/Post'
-import Certifications from '@/components/Certifications'
+import Certifications from '/components/Certifications'
 import Maps from '/components/Maps'
-import Paragraph from 'components/Paragraph'
+import Paragraph from '/components/Paragraph'
 
 import Lista from '/components/List.js'
 
@@ -35,23 +35,15 @@ let slides = [
 // Il nostro team
 let members = [
     {
-        name: "Alfonso il Grosso",
-        role: "DIRETTORE",
-        description: "I love work hard",
-        description1: "We need to belive in something to have hope... The Dreams!",
-        imageUrl: "/images/alfonso.png",
-        email: "alfonso123.grosso@gmail.it",
-        phone: '555 555-555',
+        name: "",
+        role: "",
+        description: "",
+        description1: "",
+        imageUrl: "",
+        email: "",
+        phone: '',
     },
-    {
-        name: "Vallentino Roso",
-        role: "INGEGNIERE",
-        description: "I love geometry",
-        description1: "With geometry we can make the Impossible!!",
-        imageUrl: "/images/vallentino.png",
-        email: "vallentino688.roso@gmail.it",
-        phone: '555 636 363',
-    },
+
 ]
 
 
@@ -61,19 +53,16 @@ const testimonials = [
 
 
 let menu = [
-    { title: 'Chi siamo', url: '/chi-siamo' },
-    { title: 'Contatti', url: '/contatti' },
-    { title: 'Dove siamo', url: '/dove-siamo' },
-    { title: 'Privacy', url: '/privacy' },
-    { title: 'Trasparenza', url: '/trasparenza' },
+    { title: '', url: '/' },
+
 ]
 
 let prodotti = [
     {
-        title: "The mushroom forest",
-        category: "Paesaggio fantasy",
-        description: "Il nostro sognatore ci ha chiesto di realizzare una foresta incatanta fatta di funghi giganti, poichè amante di Minecraft, e il suo bioma preferito è proprio questo..",
-        immagineUrl: "/images/foresta-di-funghi.jpg",
+        title: "",
+        category: "",
+        description: "",
+        immagineUrl: "",
     },
 
 ]
@@ -81,21 +70,25 @@ let prodotti = [
 
 let trasporti = [
     {
-        title: "Elicottero",
-        category: "90€ andata e ritorno",
-        description: "Un mezzo efficace e sicuro per fare un breve tratto dalla costa al tuo sogno",
+        title: "elicottero",
+        category: "",
+        description: "",
         immagineUrl: "",
     }
 ]
 
 let liste = [
-    {elemento:"epoca romana"},
-    {elemento:"epoca vittoriana"}
+    { elemento: "er" },
+    { elemento: "er" },
+    { elemento: "er" },
+    { elemento: "er" },
+    { elemento: "er" },
+
 ]
 
-let liste2 =[
-    {elemento:"scenografia fantasy"},
-    {elemento:"scenografia film"}
+let liste2 = [
+    { elemento: "scenografia fantasy" },
+
 ]
 
 
@@ -132,19 +125,27 @@ export default function Home({ datiArticoli }) {
                 products={trasporti}
             />
 
-         <Grid>
-            <Paragraph>
-            <Lista
-              lista={liste}
-            />
+            <Paragraph title="Prezzi" sx={{textAlign: 'center'}}>
+                <Grid container
+                    sx={{ p: 3}}
+                >
+                    <Grid item>
+                        <Paragraph title="epoca">
+                            <Lista
+                                lista={liste}
+                            />
+                        </Paragraph>
+                    </Grid>
+
+                    <Grid>
+                        <Paragraph title="paesaggio">
+                            <Lista
+                                lista={liste2}
+                            />
+                        </Paragraph>
+                    </Grid>
+                </Grid>
             </Paragraph>
-            
-            <Paragraph>
-               <Lista 
-                 lista={liste2}
-               />
-            </Paragraph> 
-        </Grid>
 
             <Team
                 title="Contatti"
@@ -171,3 +172,4 @@ export async function getStaticProps() {
         },
     }
 }
+
