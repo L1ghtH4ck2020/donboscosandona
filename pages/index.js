@@ -89,11 +89,13 @@ let trasporti = [
 ]
 
 let liste = [
-    { title: " epoca", 
-      elemento:"epoca romana" ,
-      
-    },
+    {elemento:"epoca romana"},
     {elemento:"epoca vittoriana"}
+]
+
+let liste2 =[
+    {elemento:"scenografia fantasy"},
+    {elemento:"scenografia film"}
 ]
 
 
@@ -130,12 +132,19 @@ export default function Home({ datiArticoli }) {
                 products={trasporti}
             />
 
+         <Grid>
+            <Paragraph>
             <Lista
-            title="Prezzi"
-            lista={liste}
-
+              lista={liste}
             />
-
+            </Paragraph>
+            
+            <Paragraph>
+               <Lista 
+                 lista={liste2}
+               />
+            </Paragraph> 
+        </Grid>
 
             <Team
                 title="Contatti"
