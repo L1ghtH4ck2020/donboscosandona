@@ -113,7 +113,7 @@ export default function Home({ datiArticoli }) {
                 description="Hai fatto un sogno e vorresti realizzarlo? E chi chiamerai? I DreamBuster!!!"
                 buttonUrl=''
                 buttonText=""
-                imageUrl="/images/isolalh.png"
+                imageUrl="/images/islanublar.jpg"
             />
 
             <Products
