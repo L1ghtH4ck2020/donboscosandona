@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography'
 import Head from 'next/head'
 import Link from 'next/link'
 
+
 import Layout from '/components/Layout'
 import LandingHero from '/components/LandingHero2.js'
 import Features from '/components/Features'
@@ -15,6 +16,8 @@ import Post from '/components/Post'
 import Certifications from '@/components/Certifications'
 import Maps from '/components/Maps'
 import Paragraph from 'components/Paragraph'
+
+import Lista from '/components/List.js'
 
 import { getDatiArticoli } from '/lib/articoli'
 
@@ -85,10 +88,12 @@ let trasporti = [
     }
 ]
 
-let prezzi = [
+let liste = [
     { title: " epoca", 
-      description:"epoca romana, epoca vittoriana" 
+      elemento:"epoca romana" ,
+      
     },
+    {elemento:"epoca vittoriana"}
 ]
 
 
@@ -125,13 +130,12 @@ export default function Home({ datiArticoli }) {
                 products={trasporti}
             />
 
-            <Products
-                title="I si"
-                description="Ecc"
-                cardWidth={4}
-                products={prezzi}
-            >
-            </Products>
+            <Lista
+            title="Prezzi"
+            lista={liste}
+
+            />
+
 
             <Team
                 title="Contatti"
