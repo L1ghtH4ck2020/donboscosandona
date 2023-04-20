@@ -26,7 +26,7 @@ let menu = [
     { title: 'who we are', url: '/chi_siamo' },
     { title: 'Contacts', url: '/contatti' },
     { title: 'Where we are', url: '/dove-siamo' },
-    { title: 'Privacy', url: '/privacy' },
+    { title: 'Home', url: '/' },
 ]
 
 export default function Home({ datiArticoli }) {
