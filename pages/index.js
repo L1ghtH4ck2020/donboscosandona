@@ -72,7 +72,7 @@ let prodotti = [
     {
         title: "The mushroom forest",
         category: "Paesaggio fantasy",
-        description: "Il nostro sognatore ci ha chiesto di realizzare una foresta incatanta fatta di funghi giganti, poichè amante di Minecraft, e il suo bioma preferito è proprio questo..",
+        description: "Un nostro sognatore ci ha chiesto di realizzare una foresta incatanta fatta di funghi giganti, poichè amante di Minecraft, e il suo bioma preferito è proprio questo..",
         immagineUrl: "/images/foresta-di-funghi.jpg",
     },
 
@@ -84,7 +84,7 @@ let trasporti = [
         title: "Elicottero",
         category: "90€ andata e ritorno",
         description: "Un mezzo efficace e sicuro per fare un breve tratto dalla costa al tuo sogno",
-        immagineUrl: "",
+        immagineUrl: "/images/elicottero.jpg",
     }
 ]
 
@@ -108,12 +108,12 @@ export default function Home({ datiArticoli }) {
             </Head>
 
             <LandingHero
-                opacity={0.5}
+                opacity={0.3}
                 title="Dream island"
                 description="Hai fatto un sogno e vorresti realizzarlo? E chi chiamerai? I DreamBuster!!!"
                 buttonUrl=''
                 buttonText=""
-                imageUrl="/images/islanublar.jpg"
+                imageUrl="/images/jurassic.jpg"
             />
 
             <Products
