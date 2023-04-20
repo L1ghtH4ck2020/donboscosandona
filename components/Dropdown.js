@@ -18,7 +18,7 @@ const MenuProps = {
 };
 
 const names = [
-    {title:'Inglese', url:'/index-inglese'},
+    {title:'Inglese', url:'/Inglese/index-inglese'},
     {title:'Italiano', url:'/'},
     {title:'Francese', url:'/index-francese'},
     {title:'Portoghese', url:'/index-portoghese'},
