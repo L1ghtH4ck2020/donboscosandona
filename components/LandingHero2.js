@@ -10,6 +10,8 @@ import Container from '@mui/material/Container'
 
 import { siteName, menu } from '/config/default'
 
+import MyDropdown from '/components/Dropdown.js'
+
 export default function LandingHero(props) {
     return (
         <Container
@@ -34,7 +36,7 @@ export default function LandingHero(props) {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
-            >
+            > 
                 <Box
                     sx={{
                         position: 'absolute',
@@ -45,8 +47,11 @@ export default function LandingHero(props) {
                         backgroundColor: 'rgba(0,0,0,' + props.opacity + ' )',
                     }}
                 />
+                
                 <Grid container >
+                <MyDropdown sx={{marginRight:'160px'}}/>
                     <Grid item md={3} xs={8} >
+                        
                         <Box
                             sx={{
                                 position: 'relative',
@@ -81,6 +86,8 @@ export default function LandingHero(props) {
                                     overflowX: 'auto',
                                     overflow: 'hidden',
                                     overflowWrap: 'break-word',
+                                    height:'70px',
+                                    width:'100%',
                                 }}
                             >
                                 <Box sx={{
@@ -102,10 +109,17 @@ export default function LandingHero(props) {
                                             >
                                                 {item.title}
                                             </Button>
+                                            
+
                                         ))
                                     }
+                                    
                                 </Box>
+                                <Grid item>
+                                    
+                                </Grid>
                             </Toolbar>
+                            
                         </Box>
                     </Grid>
                 </Grid>

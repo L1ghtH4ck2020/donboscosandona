@@ -2,6 +2,7 @@ import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 
 
@@ -20,6 +21,7 @@ import Paragraph from '/components/Paragraph'
 import Lista from '/components/List.js'
 
 import { getDatiArticoli } from '/lib/articoli'
+import MyDropdown from '/components/Dropdown'
 
 // I punti di forza
 const features = [
@@ -45,7 +47,7 @@ let members = [
     },
     {
         name: "Vallentino Roso",
-        role: "INGEGNIERE",
+        role: "INGEGNERE",
         description: "I love geometry",
         description1: "With geometry we can make the Impossible!!",
         imageUrl: "/images/vallentino.png",
@@ -85,6 +87,7 @@ let menu = [
     { title: 'Contatti', url: '/contatti' },
     { title: 'Dove siamo', url: '/dove-siamo' },
     { title: 'Privacy', url: '/privacy' },
+
 ]
 
 let prodotti = [
@@ -160,6 +163,9 @@ let liste3 = [
     { elemento: "6 mesi - 6700€" },
 ]
 
+
+import styles from '/components/Dropdown.module.css'
+
 export default function Home({ datiArticoli }) {
     return (
 
@@ -177,6 +183,7 @@ export default function Home({ datiArticoli }) {
                 imageUrl="/images/islanublar.jpg"
                 menu={menu}
             />
+
 
             <Products
                 title="I sogni"
