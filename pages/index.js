@@ -81,7 +81,7 @@ let prodotti = [
 
 let trasporti = [
     {
-        title: "Elicottero",
+        title: "Elicottero HH-139B",
         category: "90€ andata e ritorno",
         description: "Un mezzo efficace e sicuro per fare un breve tratto dalla costa al tuo sogno",
         immagineUrl: "/images/elicottero.jpg",
