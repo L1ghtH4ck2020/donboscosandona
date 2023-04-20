@@ -45,11 +45,27 @@ export default function Home({ datiArticoli }) {
                 buttonText=""
                 imageUrl="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dominica-isola-caraibi-foto-1619540583.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
                 menu={menu}
-           />
-            <Paragraph sx={{ textAlign: 'center' }}
+            />
+            <Paragraph
                 maxWidth='lg'
                 title="Chi siamo"
                 subtitle="Dalle origini fino ad oggi" >
+                Vi starete sicuramente chiedendo chi siamo...<br /><br />
+
+                Lascite che vi spieghi come tutto ha inizio.<br />
+                10 anni fa mi venne un'idea che stravolse la mia vita ho deciso di cominciare a investire i miei soldi fino a non avere spazio in casa dove metterli, <br />
+                iniziai a studare economia e lavorare part time come cameriere per iniziare il mio sogno,<br /> essere la persona più ricca al mondo. Dopo aver procurato dei soldi li utilizzai per libri e corsi di studio;<br /> dopo qualche anno di duro lavoro..<br /><br />
+                Ci sono riuscito, non potevo nemmeno crederci e decisi quindi di aprire dei business qua e là per raddoppiare le entarte,<br /> così diventai finalmente l'imprenditore più ricco sul pianeta.<br />
+                Ma dopo tutto quel duro lavoro mi sono ritrovato a non avere più niente da fare, finchè un giorno mi venne un idea,<br /> perchè non comprare un isola e realizzare i sogni degli altri, io avevo realizzato il mio, ma certe persona magari non riuscivano ..<br /><br />
+
+                Perciò aprii un'azienda la dream corporation e assoldai alcuni tra i più bravi inegneri, artisti, designer, stilisti, e chi ne ha più ne metta,<br />
+                e alcuni tra i miei amici più stretti per gestire l'azienda, e dal 2023 siamo finalmente operativi.<br /><br />
+
+                Comprai un'agenzia lungo la costa Playa de Montalvo, decisi così di cambiare il nome dell'azzienda.<br />
+                La Suenos Locos S.A.<br />
+                L'azienda è proprietaria del parco, situato nell'isola di Ons, dove si svolgono tutte le richieste dei sognatori più pazze e personali del mondo.<br /><br />
+
+                Io Alfonso il Grosso insieme al mio team realizzeremo i vostri sogni.<br />
 
             </Paragraph>
 
