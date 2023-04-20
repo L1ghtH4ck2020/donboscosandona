@@ -22,11 +22,11 @@ import Lista from '/components/List.js'
 import { getDatiArticoli } from '/lib/articoli'
 
 
-let menu = [
-    { title: 'who we are', url: '/chi_siamo' },
-    { title: 'Contacts', url: '/contatti' },
+const menu = [
+    { title: 'quem nós somos', url: 'chi_siamo' },
+    { title: 'Contatos', url: '/contatti' },
     { title: 'Home', url: '/' },
-    { title: 'Privacy', url: '/privacy' },
+    { title: 'Privacidade', url: '/privacy' },
 ]
 
 export default function Home({ datiArticoli }) {
@@ -39,8 +39,8 @@ export default function Home({ datiArticoli }) {
 
             <LandingHero
                 opacity={0.3}
-                title="Where we are"
-                description="Did you have a dream and want to make it come true? Who will you call? The DreamBusters!!!"
+                title="onde estamos"
+                description="Você teve um sonho e gostaria de realizá-lo? E para quem você vai ligar? Os Caça-Sonhos!!!"
                 buttonUrl=''
                 buttonText=""
                 imageUrl="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dominica-isola-caraibi-foto-1619540583.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
@@ -48,8 +48,8 @@ export default function Home({ datiArticoli }) {
            />
             <Paragraph sx={{ textAlign: 'center' }}
                 maxWidth='lg'
-                title="Where we are"
-                subtitle="All the characteristics of our magnificent island"
+                title="onde estamos"
+                subtitle="Todas as características da nossa magnífica ilha"
                 >
 
             </Paragraph>

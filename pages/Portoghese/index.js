@@ -2,7 +2,6 @@ import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 
 
@@ -21,7 +20,6 @@ import Paragraph from '/components/Paragraph'
 import Lista from '/components/List.js'
 
 import { getDatiArticoli } from '/lib/articoli'
-import MyDropdown from '/components/Dropdown'
 
 // I punti di forza
 const features = [
@@ -38,7 +36,7 @@ let slides = [
 let members = [
     {
         name: "Alfonso il Grosso",
-        role: "DIRETTORE",
+        role: "DIRETOR",
         description: "I love work hard",
         description1: "We need to belive in something to have hope... The Dreams!",
         imageUrl: "/images/alfonso.png",
@@ -47,7 +45,7 @@ let members = [
     },
     {
         name: "Vallentino Roso",
-        role: "INGEGNERE",
+        role: "ENGENHEIRO",
         description: "I love geometry",
         description1: "With geometry we can make the Impossible!!",
         imageUrl: "/images/vallentino.png",
@@ -57,7 +55,7 @@ let members = [
 
     {
         name: "Gianmarco Tocco",
-        role: "ORGANIZZATORE DEGLI EVENTI",
+        role: "ORGANIZADOR DE EVENTO",
         description: "I like organize a lot a events",
         description1: "i know... i'm so good... i can do the impossibile!!!",
         imageUrl: "/images/tocco.jpg",
@@ -66,7 +64,7 @@ let members = [
     },
     {
         name: "Mattio Bellozesu",
-        role: "OPERATORE SANITARIO",
+        role: "OPERADORA DE SAÚDE",
         description: "i love help pipol",
         description1: "thanks to me people gonna be healthy!!!",
         imageUrl: "/images/mattio1.jpg",
@@ -83,30 +81,29 @@ const testimonials = [
 
 
 let menu = [
-    { title: 'Chi siamo', url: '/chi_siamo' },
-    { title: 'Contatti', url: '/contatti' },
-    { title: 'Dove siamo', url: '/dove-siamo' },
-    { title: 'Privacy', url: '/privacy' },
-
+    { title: 'quem nós somos', url: '/chi_siamo' },
+    { title: 'Contatos', url: '/contatti' },
+    { title: 'onde estamos', url: '/dove-siamo' },
+    { title: 'Privacidade', url: '/privacy' },
 ]
 
 let prodotti = [
     {
         title: "The mushroom forest",
-        category: "Paesaggio fantasy",
-        description: "Un nostro sognatore ci ha chiesto di realizzare una foresta incatanta fatta di funghi giganti, poichè amante di Minecraft, e il suo bioma preferito è proprio questo..",
+        category: "paisagem de fantasia",
+        description: "Um dos nossos sonhadores nos pediu para criar uma floresta encantada feita de cogumelos gigantes, pois ele é um amante do Minecraft, e este é o seu bioma favorito.",
         immagineUrl: "/images/foresta-di-funghi.jpg",
     },
     {
         title: "The new Kingdom",
-        category: "Epoca medievale",
-        description: "Un nostro sognatore ci ha chiesto di realizzare un enorme castello dove poter alloggiare e vivere un'esperienza da vero Re.",
+        category: "era medieval",
+        description: "Um dos nossos sonhadores pediu-nos para construir um enorme castelo onde ele pudesse ficar e viver a experiência de um verdadeiro Rei.",
         immagineUrl: "/images/castello.jpg",
     },
     {
         title: "The fall of the Darkside",
-        category: "Paesaggio horror",
-        description: "Un nostro sognatore ci ha chiesto di realizzare un paesaggio da brividi dove poter provare la più estrema delle emozioni. La paura più pura.",
+        category: "paisagem de terror",
+        description: "Um de nossos sonhadores nos pediu para criar uma paisagem assustadora onde você pudesse experimentar as emoções mais extremas. O medo mais puro.",
         immagineUrl: "/images/horror.jpg",
     },
 
@@ -115,21 +112,21 @@ let prodotti = [
 
 let trasporti = [
     {
-        title: "Elicottero",
-        category: "70€ andata e ritorno",
-        description: "Un mezzo efficace e sicuro per fare un breve tratto dalla costa al tuo sogno",
+        title: "Helicóptero",
+        category: "devolução de 70€",
+        description: "Uma forma eficaz e segura de percorrer uma curta distância da costa até ao seu sonho",
         immagineUrl: "/images/aereo-libellula.jpg",
     },
     {
-        title: "Elicottero turistico",
-        category: "120€ andata e ritorno",
-        description: "Un mezzo che ti farà ammirare il magnifico paesaggio durante tutto il viaggio",
+        title: "Helicóptero turístico",
+        category: "devolução de 120€",
+        description: "Um veículo que lhe permitirá admirar a magnífica paisagem ao longo da viagem",
         immagineUrl: "/images/aereo-turistico.jpg",
     },
     {
-        title: "Elicottero militare",
-        category: "200€ andata e ritorno",
-        description: "Un mezzo sicuro oltre ogni limite che ti permetterà di rilassarti senza preoccupazioni",
+        title: "helicóptero militar",
+        category: "devolução de 200€",
+        description: "Um veículo seguro além de todos os limites que lhe permitirá relaxar sem preocupações",
         immagineUrl: "/images/aereo-militare.jpg"
     },
 
@@ -137,34 +134,31 @@ let trasporti = [
 
 
 let liste = [
-    { elemento: "epoca romana - 150€" },
-    { elemento: "epoca vittoriana - 170€" },
-    { elemento: "epoca medievale - 230€" },
-    { elemento: "epoca oscura - 250€" },
-    { elemento: "epoca futuristica - 300€" },
-    { elemento: "epoca western - 140€" },
+    { elemento: "tempos romanos - 150€" },
+    { elemento: "Idade vitoriana - 170€" },
+    { elemento: "era medieval - 230€" },
+    { elemento: "era negra - 250€" },
+    { elemento: "era futurista - 300€" },
+    { elemento: "era ocidental - 140€" },
 ]
 
 let liste2 = [
-    { elemento: "scenografia fantasy - 400€" },
-    { elemento: "scenografia film/serie tv - 280€" },
-    { elemento: "scenografia horror - 300€" },
-    { elemento: "scenografia crime - 260€" },
-    { elemento: "scenografia erotica - 696€" },
-    { elemento: "scenografia videogame - 330€" },
+    { elemento: "paisagem de fantasia - 400€" },
+    { elemento: "cenografia de filme/série de TV - 280€" },
+    { elemento: "paisagem de terror- 300€" },
+    { elemento: "cenografia de crime - 260€" },
+    { elemento: "cenografia erótica - 696€" },
+    { elemento: "cenografia de videogame - 330€" },
 ]
 
 let liste3 = [
-    { elemento: "1 notte - 100€" },
-    { elemento: "3 notti - 260€" },
-    { elemento: "1 settimana - 680€" },
-    { elemento: "2 settimane - 1200€" },
-    { elemento: "1 mese - 2400€" },
-    { elemento: "6 mesi - 6700€" },
+    { elemento: "1 Noite - 100€" },
+    { elemento: "3 noites - 260€" },
+    { elemento: "1 semana - 680€" },
+    { elemento: "2 semanas - 1200€" },
+    { elemento: "1 mês - 2400€" },
+    { elemento: "6 meses - 6700€" },
 ]
-
-
-import styles from '/components/Dropdown.module.css'
 
 export default function Home({ datiArticoli }) {
     return (
@@ -177,17 +171,16 @@ export default function Home({ datiArticoli }) {
             <LandingHero
                 opacity={0.3}
                 title="Dream island"
-                description="Hai fatto un sogno e vorresti realizzarlo? E chi chiamerai? I DreamBuster!!!"
+                description="Você teve um sonho e gostaria de realizá-lo? E para quem você vai ligar? Os Caça-Sonhos!!!"
                 buttonUrl=''
                 buttonText=""
                 imageUrl="/images/islanublar.jpg"
                 menu={menu}
             />
 
-
             <Products
-                title="I sogni"
-                description="Ecco alcuni dei sogni realizzati da noi"
+                title="sonhos"
+                description="Aqui estão alguns dos sonhos realizados por nós"
                 cardWidth={4}
                 products={prodotti}
             />
@@ -196,19 +189,19 @@ export default function Home({ datiArticoli }) {
 
             <Paragraph sx={{ textAlign: 'center' }}
                 maxWidth='lg'
-                title="I nostri servizi di trasporto"
-                subtitle="Ecco listino prezi dei trasporti" />
+                title="Nossos serviços de transporte"
+                subtitle="Aqui está a lista de preços de transporte" />
             <Products
                 cardWidth={4}
                 products={trasporti}
             />
 
-            <Paragraph title="Prezzi" sx={{ textAlign: 'center' }}>
+            <Paragraph title="Preços" sx={{ textAlign: 'center' }}>
                 <Grid container
                     sx={{ p: 3 }}
                 >
                     <Grid item>
-                        <Paragraph title="Epoca" sx={{ textAlign: 'center' }}>
+                        <Paragraph title="era" sx={{ textAlign: 'center' }}>
                             <Lista
                                 lista={liste}
                             />
@@ -216,14 +209,14 @@ export default function Home({ datiArticoli }) {
                     </Grid>
 
                     <Grid item>
-                        <Paragraph title="Paesaggio" sx={{ textAlign: 'center' }}>
+                        <Paragraph title="Paisagem" sx={{ textAlign: 'center' }}>
                             <Lista
                                 lista={liste2}
                             />
                         </Paragraph>
                     </Grid>
                     <Grid item>
-                        <Paragraph title="Alloggio" sx={{ textAlign: 'center' }}>
+                        <Paragraph title="Alojamento" sx={{ textAlign: 'center' }}>
                             <Lista
                                 lista={liste3}
                             />
@@ -233,8 +226,8 @@ export default function Home({ datiArticoli }) {
             </Paragraph>
 
             <Team
-                title="Contatti"
-                description="Il team che realizzerà i tuoi sogni.."
+                title="Contatos"
+                description="A equipe que vai realizar seus sonhos.."
                 members={members}
                 cardWidth={3}
             />

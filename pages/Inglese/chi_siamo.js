@@ -23,7 +23,7 @@ import { getDatiArticoli } from '/lib/articoli'
 
 
 let menu = [
-    { title: 'who we are', url: '/chi_siamo' },
+    { title: 'Home', url: '/' },
     { title: 'Contacts', url: '/contatti' },
     { title: 'Where we are', url: '/dove-siamo' },
     { title: 'Privacy', url: '/privacy' },
