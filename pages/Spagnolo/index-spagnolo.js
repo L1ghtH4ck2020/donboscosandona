@@ -38,7 +38,7 @@ let slides = [
 let members = [
     {
         name: "Alfonso il Grosso",
-        role: "DIRETTORE",
+        role: "DIRECTOR",
         description: "I love work hard",
         description1: "We need to belive in something to have hope... The Dreams!",
         imageUrl: "/images/alfonso.png",
@@ -47,7 +47,7 @@ let members = [
     },
     {
         name: "Vallentino Roso",
-        role: "INGEGNERE",
+        role: "INGENIERO",
         description: "I love geometry",
         description1: "With geometry we can make the Impossible!!",
         imageUrl: "/images/vallentino.png",
@@ -57,7 +57,7 @@ let members = [
 
     {
         name: "Gianmarco Tocco",
-        role: "ORGANIZZATORE DEGLI EVENTI",
+        role: "ORGANIZADOR DE EVENTOS",
         description: "I like organize a lot a events",
         description1: "i know... i'm so good... i can do the impossibile!!!",
         imageUrl: "/images/tocco.jpg",
@@ -66,7 +66,7 @@ let members = [
     },
     {
         name: "Mattio Bellozesu",
-        role: "OPERATORE SANITARIO",
+        role: "OPERADOR SANITARIO",
         description: "i love help pipol",
         description1: "thanks to me people gonna be healthy!!!",
         imageUrl: "/images/mattio1.jpg",
@@ -92,21 +92,21 @@ let menu = [
 
 let prodotti = [
     {
-        title: "The mushroom forest",
-        category: "Paesaggio fantasy",
-        description: "Un nostro sognatore ci ha chiesto di realizzare una foresta incatanta fatta di funghi giganti, poichè amante di Minecraft, e il suo bioma preferito è proprio questo..",
+        title: "El Bosque de Champiñones",
+        category: "Paisaje de fantasía",
+        description: "Uno de nuestros soñadores nos pidió que construyéramos un bosque encantado de setas gigantes, como amante de Minecraft, y su bioma favorito es precisamente este.",
         immagineUrl: "/images/foresta-di-funghi.jpg",
     },
     {
-        title: "The new Kingdom",
-        category: "Epoca medievale",
-        description: "Un nostro sognatore ci ha chiesto di realizzare un enorme castello dove poter alloggiare e vivere un'esperienza da vero Re.",
+        title: "El nuevo Reino",
+        category: "Época medieval",
+        description: "Uno de nuestros soñadores nos pidió construir un enorme castillo donde podamos alojarnos y vivir una experiencia real como Rey.",
         immagineUrl: "/images/castello.jpg",
     },
     {
-        title: "The fall of the Darkside",
-        category: "Paesaggio horror",
-        description: "Un nostro sognatore ci ha chiesto di realizzare un paesaggio da brividi dove poter provare la più estrema delle emozioni. La paura più pura.",
+        title: "La caída del lado oscuro",
+        category: "Paisaje de horror",
+        description: "Uno de nuestros soñadores nos pidió que creáramos un paisaje escalofriante donde pudiéramos experimentar las emociones más extremas. El miedo más puro.",
         immagineUrl: "/images/horror.jpg",
     },
 
@@ -115,21 +115,21 @@ let prodotti = [
 
 let trasporti = [
     {
-        title: "Elicottero",
-        category: "70€ andata e ritorno",
-        description: "Un mezzo efficace e sicuro per fare un breve tratto dalla costa al tuo sogno",
+        title: "Helicóptero",
+        category: "70€ ida y vuelta",
+        description: "Un medio eficaz y seguro para hacer un corto tramo de la costa a su sueño",
         immagineUrl: "/images/aereo-libellula.jpg",
     },
     {
-        title: "Elicottero turistico",
-        category: "120€ andata e ritorno",
-        description: "Un mezzo che ti farà ammirare il magnifico paesaggio durante tutto il viaggio",
+        title: "Helicóptero turístico",
+        category: "120€ ida y vuelta",
+        description: "Un medio que te hará admirar el magnífico paisaje durante todo el viaje",
         immagineUrl: "/images/aereo-turistico.jpg",
     },
     {
-        title: "Elicottero militare",
-        category: "200€ andata e ritorno",
-        description: "Un mezzo sicuro oltre ogni limite che ti permetterà di rilassarti senza preoccupazioni",
+        title: "Helicóptero militar",
+        category: "200€ ida y vuelta",
+        description: "Un medio seguro más allá de todos los límites que le permitirá relajarse sin preocupaciones",
         immagineUrl: "/images/aereo-militare.jpg"
     },
 
@@ -137,30 +137,30 @@ let trasporti = [
 
 
 let liste = [
-    { elemento: "epoca romana - 150€" },
-    { elemento: "epoca vittoriana - 170€" },
-    { elemento: "epoca medievale - 230€" },
-    { elemento: "epoca oscura - 250€" },
-    { elemento: "epoca futuristica - 300€" },
-    { elemento: "epoca western - 140€" },
+    { elemento: "época romana - 150€" },
+    { elemento: "época victoriana - 170€" },
+    { elemento: "Edad Media - 230€" },
+    { elemento: "Edad Oscura - 250€" },
+    { elemento: "época futurista - 300€" },
+    { elemento: "época western - 140€" },
 ]
 
 let liste2 = [
-    { elemento: "scenografia fantasy - 400€" },
-    { elemento: "scenografia film/serie tv - 280€" },
-    { elemento: "scenografia horror - 300€" },
-    { elemento: "scenografia crime - 260€" },
-    { elemento: "scenografia erotica - 696€" },
-    { elemento: "scenografia videogame - 330€" },
+    { elemento: "escenografía de fantasía - 400€" },
+    { elemento: "Escenografía de películas/series de televisión - 280€" },
+    { elemento: "escenografía de terror - 300€" },
+    { elemento: "Escenografía Crimen - 260€" },
+    { elemento: "escenografía erótica - 696€" },
+    { elemento: "Escenografía de videojuegos - 330€" },
 ]
 
 let liste3 = [
-    { elemento: "1 notte - 100€" },
-    { elemento: "3 notti - 260€" },
-    { elemento: "1 settimana - 680€" },
-    { elemento: "2 settimane - 1200€" },
-    { elemento: "1 mese - 2400€" },
-    { elemento: "6 mesi - 6700€" },
+    { elemento: "1 noche - 100€" },
+    { elemento: "3 noches - 260€" },
+    { elemento: "1 semana - 680€" },
+    { elemento: "2 semanas - 1200€" },
+    { elemento: "1 mes - 2400€" },
+    { elemento: "6 meses - 6700€" },
 ]
 
 
@@ -177,7 +177,7 @@ export default function Home({ datiArticoli }) {
             <LandingHero
                 opacity={0.3}
                 title="Dream island"
-                description="Hai fatto un sogno e vorresti realizzarlo? E chi chiamerai? I DreamBuster!!!"
+                description="¿Tuviste un sueño y quieres hacerlo realidad? ¿A quién vas a llamar? ¡Los DreamBuster!"
                 buttonUrl=''
                 buttonText=""
                 imageUrl="/images/islanublar.jpg"
@@ -186,8 +186,8 @@ export default function Home({ datiArticoli }) {
 
 
             <Products
-                title="I sogni"
-                description="Ecco alcuni dei sogni realizzati da noi"
+                title="Los sueños"
+                description="Estos son algunos de los sueños que hemos hecho realidad"
                 cardWidth={4}
                 products={prodotti}
             />
@@ -196,8 +196,8 @@ export default function Home({ datiArticoli }) {
 
             <Paragraph sx={{ textAlign: 'center' }}
                 maxWidth='lg'
-                title="I nostri servizi di trasporto"
-                subtitle="Ecco listino prezi dei trasporti" />
+                title="Nuestros servicios de transporte"
+                subtitle="Aquí está la lista de precios de transporte" />
             <Products
                 cardWidth={4}
                 products={trasporti}
@@ -233,8 +233,8 @@ export default function Home({ datiArticoli }) {
             </Paragraph>
 
             <Team
-                title="Contatti"
-                description="Il team che realizzerà i tuoi sogni.."
+                title="Contactos"
+                description="El equipo que hará tus sueños realidad."
                 members={members}
                 cardWidth={3}
             />
