@@ -23,10 +23,10 @@ import { getDatiArticoli } from '/lib/articoli'
 
 
 let menu = [
-    { title: 'who we are', url: '/chi_siamo' },
-    { title: 'Contacts', url: '/contatti' },
+    { title: 'who we are', url: '/Inglese/chi_siamo' },
+    { title: 'Contacts', url: '/Inglese/contatti' },
     { title: 'Home', url: '/' },
-    { title: 'Privacy', url: '/privacy' },
+    { title: 'Privacy', url: '/Inglese/privacy' },
 ]
 
 export default function Home({ datiArticoli }) {
@@ -45,12 +45,12 @@ export default function Home({ datiArticoli }) {
                 buttonText=""
                 imageUrl="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dominica-isola-caraibi-foto-1619540583.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
                 menu={menu}
-           />
+            />
             <Paragraph sx={{ textAlign: 'center' }}
                 maxWidth='lg'
                 title="Where we are"
                 subtitle="All the characteristics of our magnificent island"
-                >
+            >
 
             </Paragraph>
 

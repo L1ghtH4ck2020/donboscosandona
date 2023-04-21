@@ -21,7 +21,7 @@ const names = [
     {title:'Inglese', url:'/Inglese/index-inglese'},
     {title:'Italiano', url:'/'},
     {title:'Francese', url:'/index-francese'},
-    {title:'Portoghese', url:'/index-portoghese'},
+    {title:'Portoghese', url:'/Portoghese/index-portoghese'},
     {title:'Spagnolo', url:'/index-spagnolo'},
 ];
 

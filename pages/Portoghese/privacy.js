@@ -23,9 +23,9 @@ import { getDatiArticoli } from '/lib/articoli'
 
 
 const menu = [
-    { title: 'quem nós somos', url: 'chi_siamo' },
-    { title: 'Contatos', url: '/contatti' },
-    { title: 'onde estamos', url: '/dove-siamo' },
+    { title: 'quem nós somos', url: '/Portoghese/chi_siamo' },
+    { title: 'Contatos', url: '/Portoghese/contatti' },
+    { title: 'onde estamos', url: '/Portoghese/dove-siamo' },
     { title: 'Home', url: '/' },
 ]
 

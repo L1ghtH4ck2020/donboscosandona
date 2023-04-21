@@ -81,10 +81,10 @@ const testimonials = [
 
 
 let menu = [
-    { title: 'quem nós somos', url: '/chi_siamo' },
-    { title: 'Contatos', url: '/contatti' },
-    { title: 'onde estamos', url: '/dove-siamo' },
-    { title: 'Privacidade', url: '/privacy' },
+    { title: 'quem nós somos', url: '/Portoghese/chi_siamo' },
+    { title: 'Contatos', url: '/Portoghese/contatti' },
+    { title: 'onde estamos', url: '/Portoghese/dove-siamo' },
+    { title: 'Privacidade', url: '/Portoghese/privacy' },
 ]
 
 let prodotti = [
@@ -179,7 +179,7 @@ export default function Home({ datiArticoli }) {
             />
 
             <Products
-                title="sonhos"
+                title="Sonhos"
                 description="Aqui estão alguns dos sonhos realizados por nós"
                 cardWidth={4}
                 products={prodotti}
@@ -201,7 +201,7 @@ export default function Home({ datiArticoli }) {
                     sx={{ p: 3 }}
                 >
                     <Grid item>
-                        <Paragraph title="era" sx={{ textAlign: 'center' }}>
+                        <Paragraph title="Era" sx={{ textAlign: 'center' }}>
                             <Lista
                                 lista={liste}
                             />

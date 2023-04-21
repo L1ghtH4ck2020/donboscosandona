@@ -23,10 +23,10 @@ import { getDatiArticoli } from '/lib/articoli'
 
 
 const menu = [
-    { title: 'quem nós somos', url: 'chi_siamo' },
-    { title: 'Contatos', url: '/contatti' },
+    { title: 'quem nós somos', url: '/Portoghese/chi_siamo' },
+    { title: 'Contatos', url: '/Portoghese/contatti' },
     { title: 'Home', url: '/' },
-    { title: 'Privacidade', url: '/privacy' },
+    { title: 'Privacidade', url: '/Portoghese/privacy' },
 ]
 
 export default function Home({ datiArticoli }) {
