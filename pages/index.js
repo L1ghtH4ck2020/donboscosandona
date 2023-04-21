@@ -84,7 +84,6 @@ const testimonials = [
 
 let menu = [
     { title: 'Chi siamo', url: '/chi_siamo' },
-    { title: 'Contatti', url: '/contatti' },
     { title: 'Dove siamo', url: '/dove-siamo' },
     { title: 'Privacy', url: '/privacy' },
 
