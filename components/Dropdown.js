@@ -21,7 +21,7 @@ const names = [
     {title:'Inglese', url:'/Inglese/index-inglese'},
     {title:'Italiano', url:'/'},
     {title:'Francese', url:'/index-francese'},
-    {title:'Portoghese', url:'/index-portoghese'},
+    {title:'Portoghese', url:'/Portoghese/index-portoghese'},
     {title:'Spagnolo', url:'/index-spagnolo'},
 ];
 
@@ -66,12 +66,14 @@ export default function MyDropdown() {
           }}
           MenuProps={MenuProps}
           inputProps={{ 'aria-label': 'Without label' }}
+          href={names.url}
         >
           <MenuItem disabled value="">
             <em>Lingue</em>
           </MenuItem>
           {names.map((name) => (
             <MenuItem
+              
               key={name}
               value={name}
               style={getStyles(name, personName, theme)}
