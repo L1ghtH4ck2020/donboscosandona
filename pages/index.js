@@ -172,9 +172,9 @@ export default function Home({ datiArticoli }) {
                 products={trasporti}
             />
 
-            <Paragraph title="Prezzi" sx={{ textAlign: 'center' }}>
+            <Paragraph title="Prezzi" sx={{ textAlign: 'center', width:'100%', p:0 }} xs={100} >
                 <Grid container
-                    sx={{ p: 3 }}
+                    sx={{ width:'100%' }}
                 >
                     <Grid item>
                         <Paragraph title="Epoca" sx={{ textAlign: 'center' }}>

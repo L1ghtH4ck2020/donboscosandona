@@ -147,7 +147,7 @@ let liste = [
 
 let liste2 = [
     { elemento: "escenografía de fantasía - 400€" },
-    { elemento: "Escenografía de películas/series de televisión - 280€" },
+    { elemento: "Escenografía de películas/series - 280€" },
     { elemento: "escenografía de terror - 300€" },
     { elemento: "Escenografía Crimen - 260€" },
     { elemento: "escenografía erótica - 696€" },
@@ -203,9 +203,9 @@ export default function Home({ datiArticoli }) {
                 products={trasporti}
             />
 
-            <Paragraph title="Prezzi" sx={{ textAlign: 'center' }}>
+            <Paragraph title="Prezzi" sx={{ textAlign: 'center', width:'100%', p:0  }}>
                 <Grid container
-                    sx={{ p: 3 }}
+                    sx={{ width:'100%' }}
                 >
                     <Grid item>
                         <Paragraph title="Epoca" sx={{ textAlign: 'center' }}>
