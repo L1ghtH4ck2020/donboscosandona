@@ -12,7 +12,7 @@ export const menu = [
 ]
 
 let images = [
-    {},
+    {imageUrl:'/images/dreamIsland.png'},
 ]
 
 const menuFooter = [
