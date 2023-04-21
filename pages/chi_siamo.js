@@ -1,30 +1,14 @@
-import Container from '@mui/material/Container'
-import Grid from '@mui/material/Grid'
-import Typography from '@mui/material/Typography'
 import Head from 'next/head'
-import Link from 'next/link'
-
 
 import Layout from '/components/Layout'
 import LandingHero from '/components/LandingHero2.js'
-import Features from '/components/Features'
-import Carousel from '/components/Carousel'
-import Products from '/components/Products'
-import Testimonials from '/components/Testimonials'
-import Team from '/components/Team'
-import Post from '/components/Post'
-import Certifications from '/components/Certifications'
-import Maps from '/components/Maps'
 import Paragraph from '/components/Paragraph'
-
-import Lista from '/components/List.js'
 
 import { getDatiArticoli } from '/lib/articoli'
 
 
 const menu = [
     { title: 'Home', url: '/' },
-    { title: 'Contatti', url: '/contatti' },
     { title: 'Dove siamo', url: '/dove-siamo' },
     { title: 'Privacy', url: '/privacy' },
 ]
@@ -52,18 +36,18 @@ export default function Home({ datiArticoli }) {
                 subtitle="Dalle origini fino ad oggi" >
                 Vi starete sicuramente chiedendo chi siamo...<br /><br />
 
-                Lascite che vi spieghi come tutto ha inizio.<br />
-                10 anni fa mi venne un'idea che stravolse la mia vita ho deciso di cominciare a investire i miei soldi fino a non avere spazio in casa dove metterli, <br />
-                iniziai a studare economia e lavorare part time come cameriere per iniziare il mio sogno,<br /> essere la persona più ricca al mondo. Dopo aver procurato dei soldi li utilizzai per libri e corsi di studio;<br /> dopo qualche anno di duro lavoro..<br /><br />
-                Ci sono riuscito, non potevo nemmeno crederci e decisi quindi di aprire dei business qua e là per raddoppiare le entarte,<br /> così diventai finalmente l'imprenditore più ricco sul pianeta.<br />
+                Lasciate che vi spieghi come tutto ha inizio.<br />
+                10 anni fa mi venne un'idea che stravolse la mia vita ho deciso di cominciare a investire i miei soldi fino a non avere più spazio in casa dove metterli, <br />
+                iniziai a studare economia e lavorare part time come cameriere per iniziare il mio sogno,<br /> essere la persona più ricca al mondo. Dopo essermi procurato dei soldi li utilizzai per libri e corsi di studio;<br /> dopo qualche anno di duro lavoro..<br /><br />
+                Ci riuscì, non potevo nemmeno crederci e decisi quindi di aprire dei business qua e là per raddoppiare le entrate,<br /> così diventai finalmente l'imprenditore più ricco sul pianeta.<br />
                 Ma dopo tutto quel duro lavoro mi sono ritrovato a non avere più niente da fare, finchè un giorno mi venne un idea,<br /> perchè non comprare un isola e realizzare i sogni degli altri, io avevo realizzato il mio, ma certe persona magari non riuscivano ..<br /><br />
 
                 Perciò aprii un'azienda la dream corporation e assoldai alcuni tra i più bravi inegneri, artisti, designer, stilisti, e chi ne ha più ne metta,<br />
                 e alcuni tra i miei amici più stretti per gestire l'azienda, e dal 2023 siamo finalmente operativi.<br /><br />
 
-                Comprai un'agenzia lungo la costa Playa de Montalvo, decisi così di cambiare il nome dell'azzienda.<br />
+                Comprai un'agenzia lungo la costa Playa de Montalvo, decisi così di cambiare il nome dell'azienda.<br />
                 La Suenos Locos S.A.<br />
-                L'azienda è proprietaria del parco, situato nell'isola di Ons, dove si svolgono tutte le richieste dei sognatori più pazze e personali del mondo.<br /><br />
+                L'azienda è proprietaria del parco, situato nell'isola di Ons, dove si relizzano tutti i sogni più pazzi e personali di ogni sognatore del mondo.<br /><br />
 
                 Io Alfonso il Grosso insieme al mio team realizzeremo i vostri sogni.<br />
 

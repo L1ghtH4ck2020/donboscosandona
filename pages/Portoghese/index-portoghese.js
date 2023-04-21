@@ -1,36 +1,16 @@
-import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
-import Typography from '@mui/material/Typography'
 import Head from 'next/head'
-import Link from 'next/link'
-
 
 import Layout from '/components/Layout'
 import LandingHero from '/components/LandingHero2.js'
-import Features from '/components/Features'
-import Carousel from '/components/Carousel'
 import Products from '/components/Products'
-import Testimonials from '/components/Testimonials'
 import Team from '/components/Team'
-import Post from '/components/Post'
-import Certifications from '/components/Certifications'
 import Maps from '/components/Maps'
 import Paragraph from '/components/Paragraph'
 
 import Lista from '/components/List.js'
 
 import { getDatiArticoli } from '/lib/articoli'
-
-// I punti di forza
-const features = [
-    {},
-]
-
-
-// slides per il carousel
-let slides = [
-    {},
-]
 
 // Il nostro team
 let members = [
@@ -74,17 +54,10 @@ let members = [
 
 ]
 
-
-const testimonials = [
-    {},
-]
-
-
 let menu = [
-    { title: 'quem nós somos', url: '/chi_siamo' },
-    { title: 'Contatos', url: '/contatti' },
-    { title: 'onde estamos', url: '/dove-siamo' },
-    { title: 'Privacidade', url: '/privacy' },
+    { title: 'quem nós somos', url: '/Portoghese/chi_siamo' },
+    { title: 'onde estamos', url: '/Portoghese/dove-siamo' },
+    { title: 'Privacidade', url: '/Portoghese/privacy' },
 ]
 
 let prodotti = [
@@ -179,7 +152,7 @@ export default function Home({ datiArticoli }) {
             />
 
             <Products
-                title="sonhos"
+                title="Sonhos"
                 description="Aqui estão alguns dos sonhos realizados por nós"
                 cardWidth={4}
                 products={prodotti}
@@ -201,7 +174,7 @@ export default function Home({ datiArticoli }) {
                     sx={{ p: 3 }}
                 >
                     <Grid item>
-                        <Paragraph title="era" sx={{ textAlign: 'center' }}>
+                        <Paragraph title="Era" sx={{ textAlign: 'center' }}>
                             <Lista
                                 lista={liste}
                             />

@@ -5,7 +5,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles'
 
 import styles from './Layout.module.css'
 
-import { header, footer, siteTitle, siteDescription } from '/config/default'
+import { footer, siteTitle, siteDescription } from '/config/default'
 
 const theme = createTheme()
 
@@ -29,7 +29,6 @@ export default function Layout({ children }) {
                     <meta name="twitter:card" content="summary_large_image" />
                 </Head>
 
-                {header}
                 <main>
                     {children}
                 </main>
