@@ -78,7 +78,7 @@ export default function MyDropdown() {
               href={name.url}
               style={getStyles(name, personName, theme)}
             >
-              <Link href={name.url} style={{textDecoration: 'none', color: 'darkblue'}}>{name.title}</Link>
+              <MenuItem style={{textDecoration: 'none', color: 'darkblue'}}>{name.title}</MenuItem>
             </CardActionArea>
           ))}
         </Select>
