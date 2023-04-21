@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Products from '@/components/Products'
+
 
 
 import Layout from '/components/Layout'
