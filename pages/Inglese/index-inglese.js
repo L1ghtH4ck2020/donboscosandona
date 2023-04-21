@@ -82,7 +82,6 @@ const testimonials = [
 
 let menu = [
     { title: 'Home', url: '/Inglese/index-inglese' },
-    { title: 'who we are', url: '/Inglese/chi_siamo' },
     { title: 'Contacts', url: '/Inglese/contatti' },
     { title: 'Where we are', url: '/Inglese/dove-siamo' },
     { title: 'Privacy', url: '/Inglese/privacy' },
