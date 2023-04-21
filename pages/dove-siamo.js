@@ -4,6 +4,7 @@ import Products from '@/components/Products'
 import Layout from '/components/Layout'
 import LandingHero from '/components/LandingHero2.js'
 import Paragraph from '/components/Paragraph'
+import Products from '/components/Products'
 
 import { getDatiArticoli } from '/lib/articoli'
 
