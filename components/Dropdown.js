@@ -22,7 +22,7 @@ const names = [
     {title:'Italiano', url:'/'},
     {title:'Francese', url:'/francese/index-francese'},
     {title:'Portoghese', url:'/Portoghese/index-portoghese'},
-    {title:'Spagnolo', url:'/index-spagnolo'},
+    {title:'Spagnolo', url:'/Spagnolo/index-spagnolo'},
 ];
 
 function getStyles(name, personName, theme) {
