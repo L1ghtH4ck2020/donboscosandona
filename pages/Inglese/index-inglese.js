@@ -175,7 +175,7 @@ export default function Home({ datiArticoli }) {
                     sx={{ width:'100%' }}
                 >
                     <Grid item>
-                        <Paragraph title="Era" sx={{ textAlign: 'center' }} xs={100}>
+                        <Paragraph title="Era" sx={{ textAlign: 'center' }}>
                             <Lista
                                 lista={liste}
                             />
