@@ -8,6 +8,7 @@ import Products from '/components/Products'
 import Team from '/components/Team'
 import Maps from '/components/Maps'
 import Paragraph from '/components/Paragraph'
+import Carousel from '/components/Carousel'
 
 import Lista from '/components/List.js'
 
@@ -133,6 +134,41 @@ let liste3 = [
     { elemento: "1 mese - 2400€" },
     { elemento: "6 mesi - 6700€" },
 ]
+let slides = [
+    {
+      titolo: "Vieni a scorpire alcuni alloggi per la notte",
+      descrizione: "Sembrano piccoli ma sono molto accolglienti",
+      immagine: "/images/caribi.jpg",
+    },
+    {
+      titolo: "Ecco piccoli villagi da visitare con la famiglia",
+      descrizione: "Divertiti ad ammirare i pesci proprio accanto a te",
+      immagine: "/images/caraibi-2.jpg"
+    },
+    {
+        titolo: "E per qualcuno che vuole qualcosa di romantico...",
+        descrizione: "Vieni a farti fare una foto ricordo su quest'isoletta",
+        immagine: "/images/vivere-su-un-isola.jpg"
+      },
+  ];
+
+let slides2 = [
+    {
+        titolo: "Ecco un possibile scenario wester personalizzabile a piacere",
+        descrizione: "Lo staf lo costruirà e indosserà abiti e usi per rendere del tutto reale il tuo sogno",
+        immagine: "/images/western.jpg"
+    },
+    {
+        titolo: "Un possibile scenario Spaziale personalizzabile al 100%",
+        descrizione: "Lo staf indosserà costumi e stumenti per cambiare voce per rendere la tua esperienza spazialissima.. con anche i blaster",
+        immagine: "/images/spazio.jpg"
+    },
+    {
+        titolo: "Ecco un possibile scenario crime",
+        descrizione: "Diventera un mix tra intrighi e misteri da risolvere per farti diventare il detecive più astuto",
+        immagine: "/images/crime.jpg"
+    }
+  ]
 
 export default function Home({ datiArticoli }) {
     return (
@@ -171,6 +207,8 @@ export default function Home({ datiArticoli }) {
                 products={trasporti}
             />
 
+            <Carousel slides={slides2}/>
+
             <Paragraph title="Prezzi" sx={{ textAlign: 'center', width:'100%', p:0 }} xs={100} >
                 <Grid container
                     sx={{ width:'100%' }}
@@ -200,6 +238,8 @@ export default function Home({ datiArticoli }) {
                 </Grid>
             </Paragraph>
             {/* immagini*/}
+
+            <Carousel slides={slides}/>
 
             <Team
                 title="Contatti"
