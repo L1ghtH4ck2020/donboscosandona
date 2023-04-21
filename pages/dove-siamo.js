@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Products from '@/components/Products'
 
 import Layout from '/components/Layout'
 import LandingHero from '/components/LandingHero2.js'
