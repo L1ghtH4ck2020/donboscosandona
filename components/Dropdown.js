@@ -5,6 +5,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Link from 'next/link';
+import { CardActionArea } from '@mui/material';
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -71,13 +72,14 @@ export default function MyDropdown() {
             <em>Lingue</em>
           </MenuItem>
           {names.map((name) => (
-            <MenuItem
+            <CardActionArea
               key={name}
               value={name}
+              href={name.url}
               style={getStyles(name, personName, theme)}
             >
               <Link href={name.url} style={{textDecoration: 'none', color: 'darkblue'}}>{name.title}</Link>
-            </MenuItem>
+            </CardActionArea>
           ))}
         </Select>
       </FormControl>
