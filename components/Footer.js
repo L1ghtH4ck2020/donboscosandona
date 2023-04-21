@@ -121,6 +121,35 @@ export default function Footer(props) {
                             </Toolbar>
                         </Grid>
 
+                        <Grid item xs={12} lg={8}>
+                            <Toolbar
+                                component="nav"
+                                variant="dense"
+                                sx={{
+                                    overflowX: 'auto',
+                                    float: 'right',
+                                    color: '#fff',
+                                }}
+                            >
+                                <Grid container sx={{ marginBottom: '10px', pb: '10px'}}>
+                                    {
+                                        props.menu2.map((link) => (
+                                            <Button
+                                                color="inherit"
+                                                noWrap
+                                                key={link.title}
+                                                variant="body2"
+                                                href={link.url}
+                                                sx={{ p: 1, flexShrink: 0, marginRight: '20px' }}
+                                            >
+                                                {link.title}
+                                            </Button>
+                                        ))
+                                    }
+                                </Grid>
+                            </Toolbar>
+                        </Grid>
+
                         { /* Copyright */}
                         <Grid item xs={12} lg={4}>
                             <Typography component="h1" color="White" sx={{marginLeft: '27px', marginBottom: '15px'}}>

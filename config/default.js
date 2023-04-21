@@ -12,14 +12,14 @@ export const menu = [
 ]
 
 let images = [
-    {imageUrl:'/images/dreamIsland.png'},
+    { imageUrl: '/images/dreamIsland.png' },
 ]
 
 const menuFooter = [
-    { title: 'Sviluppatori:' },
-    { title: 'Bagnoli Filippo,' },
-    { title: 'Valentina Segato,' },
-    { title: 'Alessandro Shvets' },
+    { title: 'Chi siamo', url: '/chi_siamo' },
+    { title: 'Dove siamo', url: '/dove-siamo' },
+    { title: 'Privacy', url: '/privacy' },
+    {title: 'Home', url:'/'}
 ]
 
 const socials = [
@@ -30,7 +30,12 @@ const socials = [
     { title: 'Twitter', imageUrl: '', url: 'https://twitter.com/CampingOns' },
 ]
 
-
+const menu2 = [
+    { title: 'Sviluppatori:' },
+    { title: 'Bagnoli Filippo,' },
+    { title: 'Valentina Segato,' },
+    { title: 'Alessandro Shvets' },
+]
 
 export const footer = <Footer
     color="#00000F"
@@ -42,5 +47,6 @@ export const footer = <Footer
     socials={socials}
     images={images}
     menu={menuFooter}
+    menu2={menu2}
     copyright="Copyright (C) 2023 9dreams Agency."
 />
