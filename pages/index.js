@@ -121,7 +121,7 @@ let liste2 = [
     { elemento: "scenografia film/serie tv - 280€" },
     { elemento: "scenografia horror - 300€" },
     { elemento: "scenografia crime - 260€" },
-    { elemento: "scenografia erotica - 696€" },
+    { elemento: "scenografia spaziale - 600€" },
     { elemento: "scenografia videogame - 330€" },
 ]
 

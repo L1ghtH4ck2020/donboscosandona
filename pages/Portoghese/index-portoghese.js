@@ -120,7 +120,7 @@ let liste2 = [
     { elemento: "cenografia de filme/série de TV - 280€" },
     { elemento: "paisagem de terror- 300€" },
     { elemento: "cenografia de crime - 260€" },
-    { elemento: "cenografia erótica - 696€" },
+    { elemento: "cenografia espacial - 600€" },
     { elemento: "cenografia de videogame - 330€" },
 ]
 

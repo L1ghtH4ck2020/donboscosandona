@@ -120,11 +120,11 @@ let liste = [
 ]
 
 let liste2 = [
-    { elemento: "escenografía de fantasía - 400€" },
+    { elemento: "Escenografía de fantasía - 400€" },
     { elemento: "Escenografía de películas/series de televisión - 280€" },
-    { elemento: "escenografía de terror - 300€" },
+    { elemento: "Escenografía de terror - 300€" },
     { elemento: "Escenografía Crimen - 260€" },
-    { elemento: "escenografía erótica - 696€" },
+    { elemento: "Escenografía espacial - 600€" },
     { elemento: "Escenografía de videojuegos - 330€" },
 ]
 

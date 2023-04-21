@@ -121,7 +121,7 @@ let liste2 = [
     { elemento: "film/TV series scenography - 280$" },
     { elemento: "horror scenography - 300$" },
     { elemento: "crime scenography - 260$" },
-    { elemento: "erotic scenography - 696$" },
+    { elemento: "spatial scenography - 600$" },
     { elemento: "video game scenography - 330$" },
 ]
 

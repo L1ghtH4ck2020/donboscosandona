@@ -122,7 +122,7 @@ let liste2 = [
     { elemento: "scénographie film/série -280€" },
     { elemento: "Paysage d'horreur - 300€" },
     { elemento: "scénographie du crime - 260€" },
-    { elemento: "scénographie érotique - 696€" },
+    { elemento: "scénographie spatiale - 600€" },
     { elemento: "scénographie de jeu vidéo - 330€" },
 ]
 
