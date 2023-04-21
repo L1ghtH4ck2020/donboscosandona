@@ -200,6 +200,7 @@ export default function Home({ datiArticoli }) {
                     </Grid>
                 </Grid>
             </Paragraph>
+            {/* immagini*/}
 
             <Team
                 title="Contatti"
