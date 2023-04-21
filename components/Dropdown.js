@@ -20,9 +20,9 @@ const MenuProps = {
 const names = [
     {title:'Inglese', url:'/Inglese/index-inglese'},
     {title:'Italiano', url:'/'},
-    {title:'Francese', url:'/index-francese'},
+    {title:'Francese', url:'/francese/index-francese'},
     {title:'Portoghese', url:'/Portoghese/index-portoghese'},
-    {title:'Spagnolo', url:'/index-spagnolo'},
+    {title:'Spagnolo', url:'/Spagnolo/index-spagnolo'},
 ];
 
 function getStyles(name, personName, theme) {
@@ -66,14 +66,12 @@ export default function MyDropdown() {
           }}
           MenuProps={MenuProps}
           inputProps={{ 'aria-label': 'Without label' }}
-          href={names.url}
         >
           <MenuItem disabled value="">
             <em>Lingue</em>
           </MenuItem>
           {names.map((name) => (
             <MenuItem
-              
               key={name}
               value={name}
               style={getStyles(name, personName, theme)}

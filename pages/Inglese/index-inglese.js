@@ -1,36 +1,17 @@
-import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
-import Typography from '@mui/material/Typography'
 import Head from 'next/head'
-import Link from 'next/link'
 
 
 import Layout from '/components/Layout'
 import LandingHero from '/components/LandingHero2.js'
-import Features from '/components/Features'
-import Carousel from '/components/Carousel'
 import Products from '/components/Products'
-import Testimonials from '/components/Testimonials'
 import Team from '/components/Team'
-import Post from '/components/Post'
-import Certifications from '/components/Certifications'
 import Maps from '/components/Maps'
 import Paragraph from '/components/Paragraph'
 
 import Lista from '/components/List.js'
 
 import { getDatiArticoli } from '/lib/articoli'
-
-// I punti di forza
-const features = [
-    {},
-]
-
-
-// slides per il carousel
-let slides = [
-    {},
-]
 
 // Il nostro team
 let members = [
@@ -74,15 +55,8 @@ let members = [
 
 ]
 
-
-const testimonials = [
-    {},
-]
-
-
 let menu = [
-    { title: 'Home', url: '/Inglese/index-inglese' },
-    { title: 'Contacts', url: '/Inglese/contatti' },
+    { title: 'who we are', url: '/Inglese/chi_siamo' },
     { title: 'Where we are', url: '/Inglese/dove-siamo' },
     { title: 'Privacy', url: '/Inglese/privacy' },
 ]
@@ -196,9 +170,9 @@ export default function Home({ datiArticoli }) {
                 products={trasporti}
             />
 
-            <Paragraph title="Prices" sx={{ textAlign: 'center', width: '100%', p: 0, }} >
+            <Paragraph title="Prices" sx={{ textAlign: 'center', width:'100%', p:0  }}>
                 <Grid container
-                    sx={{ width: '100%' }}
+                    sx={{ width:'100%' }}
                 >
                     <Grid item>
                         <Paragraph title="Era" sx={{ textAlign: 'center' }}>
