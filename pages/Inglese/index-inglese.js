@@ -81,10 +81,11 @@ const testimonials = [
 
 
 let menu = [
-    { title: 'who we are', url: '/chi_siamo' },
-    { title: 'Contacts', url: '/contatti' },
-    { title: 'Where we are', url: '/dove-siamo' },
-    { title: 'Privacy', url: '/privacy' },
+    { title: 'Home', url: '/Inglese/index-inglese' },
+    { title: 'who we are', url: '/Inglese/chi_siamo' },
+    { title: 'Contacts', url: '/Inglese/contatti' },
+    { title: 'Where we are', url: '/Inglese/dove-siamo' },
+    { title: 'Privacy', url: '/Inglese/privacy' },
 ]
 
 let prodotti = [
@@ -196,12 +197,12 @@ export default function Home({ datiArticoli }) {
                 products={trasporti}
             />
 
-            <Paragraph title="prices" sx={{ textAlign: 'center' }}>
+            <Paragraph title="Prices" sx={{ textAlign: 'center', width: '100%', p: 0, }} >
                 <Grid container
-                    sx={{ p: 3 }}
+                    sx={{ width: '100%' }}
                 >
                     <Grid item>
-                        <Paragraph title="era" sx={{ textAlign: 'center' }}>
+                        <Paragraph title="Era" sx={{ textAlign: 'center' }} xs={100}>
                             <Lista
                                 lista={liste}
                             />
@@ -209,14 +210,14 @@ export default function Home({ datiArticoli }) {
                     </Grid>
 
                     <Grid item>
-                        <Paragraph title="landscape" sx={{ textAlign: 'center' }}>
+                        <Paragraph title="Landscape" sx={{ textAlign: 'center' }}>
                             <Lista
                                 lista={liste2}
                             />
                         </Paragraph>
                     </Grid>
                     <Grid item>
-                        <Paragraph title="accommodation" sx={{ textAlign: 'center' }}>
+                        <Paragraph title="Accommodation" sx={{ textAlign: 'center' }}>
                             <Lista
                                 lista={liste3}
                             />
