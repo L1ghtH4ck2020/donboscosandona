@@ -59,7 +59,6 @@ let menu = [
     { title: 'Chi siamo', url: '/chi_siamo' },
     { title: 'Dove siamo', url: '/dove-siamo' },
     { title: 'Privacy', url: '/privacy' },
-
 ]
 
 let prodotti = [

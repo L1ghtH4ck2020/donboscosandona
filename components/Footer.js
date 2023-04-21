@@ -76,7 +76,7 @@ export default function Footer(props) {
                                                 variant="body2"
                                                 sx={{ p: 1, flexShrink: 3, }}
                                             >
-                                                <img src={image.imageUrl} width="120" />
+                                                <img src={image.imageUrl} width="100" />
                                             </Link>
                                         </Grid>
                                     ))
