@@ -9,6 +9,7 @@ import Team from '/components/Team'
 import Maps from '/components/Maps'
 import Paragraph from '/components/Paragraph'
 import Carousel from '/components/Carousel'
+import Footer from '/components/Footer'
 
 import Lista from '/components/List.js'
 
@@ -170,6 +171,33 @@ let slides2 = [
     }
   ]
 
+
+let images = [
+    { imageUrl: '/images/dreamIsland.png' },
+]
+
+const menuFooter = [
+    { title: 'Chi siamo', url: '/chi_siamo' },
+    { title: 'Dove siamo', url: '/dove-siamo' },
+    { title: 'Privacy', url: '/privacy' },
+    {title: 'Home', url:'/'}
+]
+
+const socials = [
+    { title: 'Instagram', imageUrl: '', url: '' },
+    { title: 'Tik Tok', imageUrl: '', url: '' },
+    { title: 'Facebook', imageUrl: '', url: '' },
+    { title: 'Telegram', imageUrl: '', url: '' },
+    { title: 'Twitter', imageUrl: '', url: 'https://twitter.com/CampingOns' },
+]
+
+const menu2 = [
+    { title: 'Sviluppatori:' },
+    { title: 'Bagnoli Filippo,' },
+    { title: 'Valentina Segato,' },
+    { title: 'Alessandro Shvets' },
+]
+
 export default function Home({ datiArticoli }) {
     return (
 
@@ -254,6 +282,19 @@ export default function Home({ datiArticoli }) {
                 maxHeight='550px'
                 url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23578.90449201762!2d-8.954811645063147!3d42.37741165896341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f44afad207c8b%3A0x299878e0962187e5!2sIsola%20di%20Ons!5e0!3m2!1sit!2sit!4v1681717640180!5m2!1sit!2sit"
             />
+            <Footer
+    color="#00000F"
+    opacitycolor="1"
+    opacity={1}
+    title1="About us"
+    description1="Siamo un'associazione che acchiappa i sogni delle persone e li realizza!! La nostra isola si trova in Spagna, più precisamnete nell'isola di Ons."
+    title2="Social"
+    socials={socials}
+    images={images}
+    menu={menuFooter}
+    menu2={menu2}
+    copyright="Copyright (C) 2023 9dreams Agency."
+/>
 
         </Layout >
     )

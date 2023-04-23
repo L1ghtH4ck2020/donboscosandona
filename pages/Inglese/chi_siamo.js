@@ -4,15 +4,37 @@ import Head from 'next/head'
 import Layout from '/components/Layout'
 import LandingHero from '/components/LandingHero2.js'
 import Paragraph from '/components/Paragraph'
+import Footer from '/components/Footer'
 
 import { getDatiArticoli } from '/lib/articoli'
 
 
 let menu = [
-    { title: 'Home', url: '/' },
+    { title: 'Home', url: '/Inglese/index-inglese' },
     { title: 'Where we are', url: '/Inglese/dove-siamo' },
     { title: 'Privacy', url: '/Inglese/privacy' },
 ]
+
+let images = [
+    { imageUrl: '/images/dreamIsland.png' },
+]
+
+
+const socials = [
+    { title: 'Instagram', imageUrl: '', url: '' },
+    { title: 'Tik Tok', imageUrl: '', url: '' },
+    { title: 'Facebook', imageUrl: '', url: '' },
+    { title: 'Telegram', imageUrl: '', url: '' },
+    { title: 'Twitter', imageUrl: '', url: 'https://twitter.com/CampingOns' },
+]
+
+const menu2 = [
+    { title: 'Developers:' },
+    { title: 'Bagnoli Filippo,' },
+    { title: 'Valentina Segato,' },
+    { title: 'Alessandro Shvets' },
+]
+
 
 export default function Home({ datiArticoli }) {
     return (
@@ -52,6 +74,18 @@ export default function Home({ datiArticoli }) {
 
                 So myself, Alfonso il Grosso, and my team will make your dreams come true.<br />
             </Paragraph>
+
+            <Footer color="#00000F"
+                opacitycolor="1"
+                opacity={1}
+                title1="About us"
+                description1="We are an association that catches people's dreams and makes them come true! Our island is located in Spain, more precisely on the island of Ons."
+                title2="Social"
+                socials={socials}
+                images={images}
+                menu={menu}
+                menu2={menu2}
+                copyright="Copyright (C) 2023 9dreams Agency." />
 
         </Layout >
     )

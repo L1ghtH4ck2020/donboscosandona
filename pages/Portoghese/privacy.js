@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Layout from '/components/Layout'
 import LandingHero from '/components/LandingHero2.js'
 import Paragraph from '/components/Paragraph'
+import Footer from '/components/Footer'
 
 import { getDatiArticoli } from '/lib/articoli'
 
@@ -11,8 +12,29 @@ import { getDatiArticoli } from '/lib/articoli'
 const menu = [
     { title: 'quem nós somos', url: '/Portoghese/chi_siamo' },
     { title: 'onde estamos', url: '/Portoghese/dove-siamo' },
-    { title: 'Home', url: '/' },
+    { title: 'Home', url: '/Portoghese/index-portoghese' },
 ]
+
+let images = [
+    { imageUrl: '/images/dreamIsland.png' },
+]
+
+
+const socials = [
+    { title: 'Instagram', imageUrl: '', url: '' },
+    { title: 'Tik Tok', imageUrl: '', url: '' },
+    { title: 'Facebook', imageUrl: '', url: '' },
+    { title: 'Telegram', imageUrl: '', url: '' },
+    { title: 'Twitter', imageUrl: '', url: 'https://twitter.com/CampingOns' },
+]
+
+const menu2 = [
+    { title: 'Desenvolvedores:' },
+    { title: 'Bagnoli Filippo,' },
+    { title: 'Valentina Segato,' },
+    { title: 'Alessandro Shvets' },
+]
+
 
 export default function Home({ datiArticoli }) {
     return (
@@ -58,6 +80,17 @@ export default function Home({ datiArticoli }) {
                 </p>
             </Paragraph>
 
+            <Footer color="#00000F"
+                opacitycolor="1"
+                opacity={1}
+                title1="Sobre nós"
+                description1="Somos uma associação que captura os sonhos das pessoas e os torna realidade!! Nossa ilha está localizada na Espanha, mais especificamente na ilha de Ons."
+                title2="Social"
+                socials={socials}
+                images={images}
+                menu={menu}
+                menu2={menu2}
+                copyright="Copyright (C) 2023 9dreams Agency." />
         </Layout >
     )
 }

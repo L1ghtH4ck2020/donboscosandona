@@ -32,7 +32,7 @@ export default function Layout({ children }) {
                 <main>
                     {children}
                 </main>
-                {footer}
+                
             </div>
         </ThemeProvider>
     )

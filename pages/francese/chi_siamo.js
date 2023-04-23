@@ -3,14 +3,35 @@ import Head from 'next/head'
 import Layout from '/components/Layout'
 import LandingHero from '/components/LandingHero2.js'
 import Paragraph from '/components/Paragraph'
+import Footer from '/components/Footer'
 
 import { getDatiArticoli } from '/lib/articoli'
 
 
 const menu = [
-    { title: 'Accueil', url: '/' },
+    { title: 'Accueil', url: '/francese/index-francese' },
     { title: 'Où sommes-nous', url: '/francese/dove-siamo' },
     { title: 'Vie privée', url: '/francese/privacy' },
+]
+
+let images = [
+    { imageUrl: '/images/dreamIsland.png' },
+]
+
+
+const socials = [
+    { title: 'Instagram', imageUrl: '', url: '' },
+    { title: 'Tik Tok', imageUrl: '', url: '' },
+    { title: 'Facebook', imageUrl: '', url: '' },
+    { title: 'Telegram', imageUrl: '', url: '' },
+    { title: 'Twitter', imageUrl: '', url: 'https://twitter.com/CampingOns' },
+]
+
+const menu2 = [
+    { title: 'Développeurs:' },
+    { title: 'Bagnoli Filippo,' },
+    { title: 'Valentina Segato,' },
+    { title: 'Alessandro Shvets' },
 ]
 
 export default function Home({ datiArticoli }) {
@@ -52,6 +73,17 @@ export default function Home({ datiArticoli }) {
                 Alfonso il Grosso et mon équipe réaliseront vos rêves.<br />
 
             </Paragraph>
+            <Footer color="#00000F"
+                opacitycolor="1"
+                opacity={1}
+                title1="À propos de nous"
+                description1="Nous sommes une association qui capture les rêves des gens et les réalise !! Notre île est située en Espagne, plus précisément sur l'île d'Ons."
+                title2="Social"
+                socials={socials}
+                images={images}
+                menu={menu}
+                menu2={menu2}
+                copyright="Copyright (C) 2023 9dreams Agency." />
 
         </Layout >
     )

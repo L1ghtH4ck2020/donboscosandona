@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Products from '@/components/Products'
 
-
+import Footer from '/components/Footer'
 
 import Layout from '/components/Layout'
 import LandingHero from '/components/LandingHero2.js'
@@ -11,9 +11,30 @@ import { getDatiArticoli } from '/lib/articoli'
 
 
 const menu = [
-    { title: 'Qui sommes-nous ?', url: 'chi_siamo' },
-    { title: 'Home', url: '/' },
-    { title: 'Vie privée', url: '/privacy' },
+    { title: 'Qui sommes-nous ?', url: '/francese/chi_siamo' },
+    { title: 'Accueil', url: '/francese/index-francese' },
+    { title: 'Vie privée', url: '/francese/privacy' },
+]
+
+
+let images = [
+    { imageUrl: '/images/dreamIsland.png' },
+]
+
+
+const socials = [
+    { title: 'Instagram', imageUrl: '', url: '' },
+    { title: 'Tik Tok', imageUrl: '', url: '' },
+    { title: 'Facebook', imageUrl: '', url: '' },
+    { title: 'Telegram', imageUrl: '', url: '' },
+    { title: 'Twitter', imageUrl: '', url: 'https://twitter.com/CampingOns' },
+]
+
+const menu2 = [
+    { title: 'Développeurs:' },
+    { title: 'Bagnoli Filippo,' },
+    { title: 'Valentina Segato,' },
+    { title: 'Alessandro Shvets' },
 ]
 
 let prodotti = [
@@ -58,9 +79,9 @@ export default function Home({ datiArticoli }) {
                 maxWidth='lg'
                 title="Où sommes-nous ?">
                 <p style={{ fontSize: '19px' }}>
-                    Ons est une île espagnole appartenant au petit archipel galicien des îles d'Ons. Elle est située à l'entrée de la Ria de Pontevedra et appartient administrativement à la municipalité de Bueu, située dans la province de Pontevedra. Avec d'autres petits archipels du nord de l'Espagne, comme l'archipel des îles Cies ou les îles de Sálvora et Cortegada, il fait partie du parc national des îles atlantiques de Galice<br/>
-                    La superficie totale de l'île est de 4,25 km² et son point culminant correspond au sommet de l'Alto do Cucorno à 128 mètres d'altitude. Malgré sa petite taille, l'île dispose de 16 sources d'eau potable qui alimentent les réserves d'eau de l'île. Le climat est qualifié de méditerranéen avec des températures moyennes d'environ 14,2 °C et des précipitations annuelles moyennes relativement élevées<br/>
-                    La population totale est de 81 personnes. Malgré les chiffres actuels, la démographie de l'île a connu des fluctuations erratiques au cours du siècle dernier, passant de 530 habitants en 1955 à seulement 16 en 1982. La population est principalement concentrée sur la côte est, où les rivages sont sablonneux et en pente douce, tandis que la côte ouest, directement orientée vers l'océan, est plus accidentée et rocheuse<br/>
+                    Ons est une île espagnole appartenant au petit archipel galicien des îles d'Ons. Elle est située à l'entrée de la Ria de Pontevedra et appartient administrativement à la municipalité de Bueu, située dans la province de Pontevedra. Avec d'autres petits archipels du nord de l'Espagne, comme l'archipel des îles Cies ou les îles de Sálvora et Cortegada, il fait partie du parc national des îles atlantiques de Galice<br />
+                    La superficie totale de l'île est de 4,25 km² et son point culminant correspond au sommet de l'Alto do Cucorno à 128 mètres d'altitude. Malgré sa petite taille, l'île dispose de 16 sources d'eau potable qui alimentent les réserves d'eau de l'île. Le climat est qualifié de méditerranéen avec des températures moyennes d'environ 14,2 °C et des précipitations annuelles moyennes relativement élevées<br />
+                    La population totale est de 81 personnes. Malgré les chiffres actuels, la démographie de l'île a connu des fluctuations erratiques au cours du siècle dernier, passant de 530 habitants en 1955 à seulement 16 en 1982. La population est principalement concentrée sur la côte est, où les rivages sont sablonneux et en pente douce, tandis que la côte ouest, directement orientée vers l'océan, est plus accidentée et rocheuse<br />
                     Ses plages sont cristallines et plusieurs sentiers mènent au phare ou à Buraco do Inferno. L'île abrite le seul camping durable de Galice, avec des services de camping, de location de cabanes et de glamping.
                     La plage de Melide est située au nord de l'île. C'était l'une des premières plages nudistes de Galice et elle est accessible par un sentier de deux kilomètres depuis le centre-ville de l'île.
                 </p>
@@ -70,6 +91,18 @@ export default function Home({ datiArticoli }) {
                 cardWidth={4}
 
             />
+            <Footer color="#00000F"
+                opacitycolor="1"
+                opacity={1}
+                title1="À propos de nous"
+                description1="Nous sommes une association qui capture les rêves des gens et les réalise !! Notre île est située en Espagne, plus précisément sur l'île d'Ons."
+                title2="Social"
+                socials={socials}
+                images={images}
+                menu={menu}
+                menu2={menu2}
+                copyright="Copyright (C) 2023 9dreams Agency." />
+
         </Layout >
     )
 }

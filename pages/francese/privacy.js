@@ -5,13 +5,35 @@ import Layout from '/components/Layout'
 import LandingHero from '/components/LandingHero2.js'
 import Paragraph from '/components/Paragraph'
 
+import Footer from '/components/Footer'
+
 import { getDatiArticoli } from '/lib/articoli'
 
 
 const menu = [
     { title: 'Qui sommes-nous', url: '/francese/chi_siamo' },
     { title: 'Où sommes-nous', url: '/francese/dove-siamo' },
-    { title: 'Accueil', url: '/' },
+    { title: 'Accueil', url: '/francese/index-francese' },
+]
+
+let images = [
+    { imageUrl: '/images/dreamIsland.png' },
+]
+
+
+const socials = [
+    { title: 'Instagram', imageUrl: '', url: '' },
+    { title: 'Tik Tok', imageUrl: '', url: '' },
+    { title: 'Facebook', imageUrl: '', url: '' },
+    { title: 'Telegram', imageUrl: '', url: '' },
+    { title: 'Twitter', imageUrl: '', url: 'https://twitter.com/CampingOns' },
+]
+
+const menu2 = [
+    { title: 'Développeurs:' },
+    { title: 'Bagnoli Filippo,' },
+    { title: 'Valentina Segato,' },
+    { title: 'Alessandro Shvets' },
 ]
 
 export default function Home({ datiArticoli }) {
@@ -37,8 +59,8 @@ export default function Home({ datiArticoli }) {
                 maxWidth='lg'
                 sx={{ marginTop: "10px", marginBottom: "60px", textAlign: 'center', }}
             >
-                <p style={{textAlign: "left"}}> 
-                L'article 13 du GDPR, le règlement de l'UE sur la vie privée introduit en 2018, exige que la personne concernée soit informée de ses droits et facultés en matière de données personnelles par le responsable du traitement.<br /><br />
+                <p style={{ textAlign: "left" }}>
+                    L'article 13 du GDPR, le règlement de l'UE sur la vie privée introduit en 2018, exige que la personne concernée soit informée de ses droits et facultés en matière de données personnelles par le responsable du traitement.<br /><br />
                     Les informations de confidentialité sont fournies, en principe, par écrit et de préférence sous forme électronique, même si d'autres moyens sont autorisés.<br /><br />
 
 
@@ -57,6 +79,19 @@ export default function Home({ datiArticoli }) {
                     La communication des informations sur le traitement des données personnelles (ex. art. 13 du code de confidentialité) doit être fournie, <br /> dans le cas de données personnelles non collectées directement auprès de l'intéressé (art. 14 du règlement ), dans un délai maximum d'un mois à compter de la collecte,<br /> ou au moment de la communication des données à des tiers ou à l'intéressé.<br />
                 </p>
             </Paragraph>
+
+            <Footer color="#00000F"
+                opacitycolor="1"
+                opacity={1}
+                title1="À propos de nous"
+                description1="Nous sommes une association qui capture les rêves des gens et les réalise !! Notre île est située en Espagne, plus précisément sur l'île d'Ons."
+                title2="Social"
+                socials={socials}
+                images={images}
+                menu={menu}
+                menu2={menu2}
+                copyright="Copyright (C) 2023 9dreams Agency." />
+
 
         </Layout >
     )

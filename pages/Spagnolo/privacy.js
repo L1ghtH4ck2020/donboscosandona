@@ -5,14 +5,38 @@ import Layout from '/components/Layout'
 import LandingHero from '/components/LandingHero2.js'
 import Paragraph from '/components/Paragraph'
 
+import Footer from '/components/Footer'
+
+
 import { getDatiArticoli } from '/lib/articoli'
 
 
 const menu = [
     { title: 'Quiénes somos', url: '/Spagnolo/chi_siamo' },
     { title: '¿Dónde estamos?', url: '/Spagnolo/dove-siamo' },
-    { title: 'Home', url: '/' },
+    { title: 'Home', url: '/Spagnolo/index-spagnolo' },
 ]
+
+let images = [
+    { imageUrl: '/images/dreamIsland.png' },
+]
+
+
+const socials = [
+    { title: 'Instagram', imageUrl: '', url: '' },
+    { title: 'Tik Tok', imageUrl: '', url: '' },
+    { title: 'Facebook', imageUrl: '', url: '' },
+    { title: 'Telegram', imageUrl: '', url: '' },
+    { title: 'Twitter', imageUrl: '', url: 'https://twitter.com/CampingOns' },
+]
+
+const menu2 = [
+    { title: 'Desarrolladores:' },
+    { title: 'Bagnoli Filippo,' },
+    { title: 'Valentina Segato,' },
+    { title: 'Alessandro Shvets' },
+]
+
 
 export default function Home({ datiArticoli }) {
     return (
@@ -55,6 +79,17 @@ export default function Home({ datiArticoli }) {
                 </p>
             </Paragraph>
 
+            <Footer color="#00000F"
+                opacitycolor="1"
+                opacity={1}
+                title1="Sobre nosotros"
+                description1="Somos una asociación que captura los sueños de la gente y los hace realidad!! Nuestra isla se encuentra en España, más precisamente en la isla de Ons."
+                title2="Social"
+                socials={socials}
+                images={images}
+                menu={menu}
+                menu2={menu2}
+                copyright="Copyright (C) 2023 9dreams Agency." />
         </Layout >
     )
 }

@@ -5,14 +5,36 @@ import Products from '@/components/Products'
 import Layout from '/components/Layout'
 import LandingHero from '/components/LandingHero2.js'
 import Paragraph from '/components/Paragraph'
+import Footer from '/components/Footer'
 
 import { getDatiArticoli } from '/lib/articoli'
 
 
 const menu = [
     { title: 'Quiénes somos', url: '/Spagnolo/chi_siamo' },
-    { title: 'Home', url: '/' },
+    { title: 'Home', url: '/Spagnolo/index-spagnolo' },
     { title: 'Privacidad', url: '/Spagnolo/privacy' },
+]
+
+
+let images = [
+    { imageUrl: '/images/dreamIsland.png' },
+]
+
+
+const socials = [
+    { title: 'Instagram', imageUrl: '', url: '' },
+    { title: 'Tik Tok', imageUrl: '', url: '' },
+    { title: 'Facebook', imageUrl: '', url: '' },
+    { title: 'Telegram', imageUrl: '', url: '' },
+    { title: 'Twitter', imageUrl: '', url: 'https://twitter.com/CampingOns' },
+]
+
+const menu2 = [
+    { title: 'Desarrolladores:' },
+    { title: 'Bagnoli Filippo,' },
+    { title: 'Valentina Segato,' },
+    { title: 'Alessandro Shvets' },
 ]
 
 let prodotti = [
@@ -56,19 +78,32 @@ export default function Home({ datiArticoli }) {
             <Paragraph sx={{ textAlign: 'left' }}
                 maxWidth='lg'
                 title="¿Dónde estamos?">
-                <p style={{fontSize: '19px'}}>
-                    Ons es una isla española perteneciente al pequeño archipiélago gallego de las Islas Ons. Se encuentra a la entrada de la Ría de Pontevedra y administrativamente pertenece al municipio de Bueu, situado en la provincia de Pontevedra. Junto con otros pequeños archipiélagos del norte de España como el archipiélago de las Islas Cíes o las islas de Sálvora y Cortegada, forma parte del Parque Nacional de las Islas Atlánticas de Galicia.<br/>
+                <p style={{ fontSize: '19px' }}>
+                    Ons es una isla española perteneciente al pequeño archipiélago gallego de las Islas Ons. Se encuentra a la entrada de la Ría de Pontevedra y administrativamente pertenece al municipio de Bueu, situado en la provincia de Pontevedra. Junto con otros pequeños archipiélagos del norte de España como el archipiélago de las Islas Cíes o las islas de Sálvora y Cortegada, forma parte del Parque Nacional de las Islas Atlánticas de Galicia.<br />
                     La superficie total de la isla es de 4,25 km² y su punto más alto corresponde a la cumbre del Alto do Cucorno, a 128 metros de altura. A pesar de su pequeño tamaño, la isla cuenta con 16 fuentes de agua potable que abastecen las reservas de agua de la isla. El clima se califica de mediterráneo, con temperaturas medias en torno a los 14,2 °C y precipitaciones medias anuales relativamente altas.<br />
                     La población total es de 81 personas. A pesar de las cifras actuales, la demografía de la isla ha fluctuado erráticamente durante el último siglo: llegó a tener 530 habitantes en 1955 y descendió a sólo 16 en 1982. La población se concentra principalmente en la costa oriental, donde las costas se caracterizan por ser arenosas y de pendiente suave, mientras que la costa occidental, directamente orientada hacia el océano, es más accidentada y rocosa.<br />
                     Sus playas son cristalinas y hay varios senderos que llevan al faro o al Buraco do Inferno. La isla alberga el único camping sostenible de Galicia, con servicios de acampada, alquiler de cabañas y glamping.
                     La playa de Melide se encuentra en el norte de la isla. Fue una de las primeras playas nudistas de Galicia y se accede a ella a través de un sendero de dos kilómetros desde el núcleo urbano de la isla.
-                </p>  
+                </p>
             </Paragraph>
             <Products
-              products={prodotti}
-              cardWidth={4}
-            
+                products={prodotti}
+                cardWidth={4}
+
             />
+            <Footer color="#00000F"
+                opacitycolor="1"
+                opacity={1}
+                title1="Sobre nosotros"
+                description1="Somos una asociación que captura los sueños de la gente y los hace realidad!! Nuestra isla se encuentra en España, más precisamente en la isla de Ons."
+                title2="Social"
+                socials={socials}
+                images={images}
+                menu={menu}
+                menu2={menu2}
+                copyright="Copyright (C) 2023 9dreams Agency." />
+
+
         </Layout >
     )
 }
