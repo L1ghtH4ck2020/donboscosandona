@@ -127,6 +127,41 @@ let trasporti = [
     },
 
 ]
+let slides = [
+    {
+      titolo: "Venez découvrir quelques hébergements pour la nuit",
+      descrizione: "Ils ont l'air petits mais sont très accueillants",
+      immagine: "/images/caribi.jpg",
+    },
+    {
+      titolo: "Voici des petits villages à visiter en famille",
+      descrizione: "Profitez d'admirer les poissons juste à côté de vous",
+      immagine: "/images/caraibi-2.jpg"
+    },
+    {
+        titolo: "Et pour quelqu'un qui veut quelque chose de romantique...",
+        descrizione: "Venez vous faire prendre en photo souvenir sur cet îlot",
+        immagine: "/images/vivere-su-un-isola.jpg"
+      },
+  ];
+
+let slides2 = [
+    {
+        titolo: "Voici un scénario Wester possible qui peut être personnalisé à volonté",
+        descrizione: "Le personnel le construira et portera des vêtements et des utilisations pour rendre votre rêve complètement réel",
+        immagine: "/images/western.jpg"
+    },
+    {
+        titolo: "Un possible scénario spatial 100% personnalisable",
+        descrizione: "Le personnel portera des costumes et des outils de changement de voix pour rendre votre expérience super spacieuse… même avec des blasters",
+        immagine: "/images/spazio.jpg"
+    },
+    {
+        titolo: "Voici un scénario de crime possible",
+        descrizione: "Il deviendra un mélange d'intrigues et de mystères à résoudre pour faire de vous le détective le plus rusé",
+        immagine: "/images/crime.jpg"
+    }
+  ]
 
 
 let liste = [
@@ -193,6 +228,8 @@ export default function Home({ datiArticoli }) {
                 products={trasporti}
             />
 
+            <Carousel slides={slides2} />
+
             <Paragraph title="Prix" sx={{ textAlign: 'center', width: '100%', p: 0 }}>
                 <Grid container
                     sx={{ width: '100%' }}
@@ -221,6 +258,8 @@ export default function Home({ datiArticoli }) {
                     </Grid>
                 </Grid>
             </Paragraph>
+
+            <Carousel slides={slides} />
 
             <Team
                 title="Contacts"

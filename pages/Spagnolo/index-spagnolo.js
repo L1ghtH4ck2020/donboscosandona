@@ -131,6 +131,41 @@ let trasporti = [
     },
 
 ]
+let slides = [
+    {
+      titolo: "Ven y descubre algunos alojamientos para pasar la noche",
+      descrizione: "Se ven pequeños pero son muy acogedores.",
+      immagine: "/images/caribi.jpg",
+    },
+    {
+      titolo: "Aquí hay pequeños pueblos para visitar en familia",
+      descrizione: "Disfruta admirando los peces a tu lado.",
+      immagine: "/images/caraibi-2.jpg"
+    },
+    {
+        titolo: "Y para alguien que quiere algo romántico...",
+        descrizione: "Ven y tómate una foto de recuerdo en este islote",
+        immagine: "/images/vivere-su-un-isola.jpg"
+      },
+  ];
+
+let slides2 = [
+    {
+        titolo: "Aquí hay un posible escenario occidental que se puede personalizar como se desee.",
+        descrizione: "El personal lo construirá y vestirá y usará para hacer su sueño completamente real.",
+        immagine: "/images/western.jpg"
+    },
+    {
+        titolo: "Un posible escenario espacial 100% personalizable",
+        descrizione: "El personal usará disfraces y herramientas de cambio de voz para que su experiencia sea súper espaciosa... incluso con blásters.",
+        immagine: "/images/spazio.jpg"
+    },
+    {
+        titolo: "Aquí hay un posible escenario de crimen.",
+        descrizione: "Se convertirá en una mezcla de intriga y misterios por resolver para convertirte en el detective más astuto.",
+        immagine: "/images/crime.jpg"
+    }
+  ]
 
 
 let liste = [
@@ -199,6 +234,7 @@ export default function Home({ datiArticoli }) {
                 products={trasporti}
             />
 
+            <Carousel slides={slides2} />
             <Paragraph title="Prezzi" sx={{ textAlign: 'center' }}>
                 <Grid container
                     sx={{ p: 3 }}
@@ -227,6 +263,8 @@ export default function Home({ datiArticoli }) {
                     </Grid>
                 </Grid>
             </Paragraph>
+
+            <Carousel slides={slides} />
 
             <Team
                 title="Contactos"
