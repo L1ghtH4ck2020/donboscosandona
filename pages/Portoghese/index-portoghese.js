@@ -8,6 +8,7 @@ import Team from '/components/Team'
 import Maps from '/components/Maps'
 import Paragraph from '/components/Paragraph'
 import Footer from '/components/Footer'
+import Carousel from '/components/Carousel'
 
 import Lista from '/components/List.js'
 
@@ -154,7 +155,41 @@ const menu2 = [
     { title: 'Alessandro Shvets' },
 ]
 
+let slides = [
+    {
+        titolo: "Venha conhecer algumas acomodações para a noite",
+        descrizione: "Eles parecem pequenos, mas são muito acolhedores",
+        immagine: "/images/caribi.jpg",
+    },
+    {
+        titolo: "Aqui estão pequenas vilas para visitar com a família",
+        descrizione: "Divirta-se vendo os peixes bem ao seu lado",
+        immagine: "/images/caraibi-2.jpg"
+    },
+    {
+        titolo: "E para alguém que quer algo romântico...",
+        descrizione: "Venha tirar uma foto de lembrança desta pequena ilha",
+        immagine: "/images/vivere-su-un-isola.jpg"
+    },
+];
 
+let slides2 = [
+    {
+        titolo: "Aqui está um possível cenário wester personalizável ao seu gosto",
+        descrizione: "A equipe irá construí-lo e usar roupas e usos para tornar seu sonho totalmente real",
+        immagine: "/images/western.jpg"
+    },
+    {
+        titolo: "Cenário Espacial 100% personalizável possível",
+        descrizione: "A equipe usará trajes e instrumentos para mudar a voz para tornar sua experiência muito espaçosa.",
+        immagine: "/images/spazio.jpg"
+    },
+    {
+        titolo: "Aqui está um possível cenário de crime",
+        descrizione: "Torne-se uma mistura de intrigas e mistérios para ajudá-lo a se tornar o detetive mais esperto",
+        immagine: "/images/crime.jpg"
+    }
+]
 
 export default function Home({ datiArticoli }) {
     return (
@@ -191,6 +226,8 @@ export default function Home({ datiArticoli }) {
                 cardWidth={4}
                 products={trasporti}
             />
+            <Carousel slides={slides2} />
+
 
             <Paragraph title="Preços" sx={{ textAlign: 'center', width: '100%', p: 0 }}>
                 <Grid container
@@ -220,7 +257,7 @@ export default function Home({ datiArticoli }) {
                     </Grid>
                 </Grid>
             </Paragraph>
-
+            <Carousel slides={slides} />
             <Team
                 title="Contatos"
                 description="A equipe que vai realizar seus sonhos.."
