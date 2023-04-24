@@ -106,41 +106,7 @@ let trasporti = [
     },
 
 ]
-let slides = [
-    {
-        titolo: "Venha conhecer alguns alojamentos para a noite",
-        descrizione: "Parecem pequenos, mas são muito acolhedores",
-        immagine: "/images/caribi.jpg",
-    },
-    {
-        titolo: "Aqui estão pequenas aldeias para visitar com a família",
-        descrizione: "Divirta-se admirando os peixes ao seu lado",
-        immagine: "/images/caraibi-2.jpg"
-    },
-    {
-        titolo: "E para quem quer algo romântico...",
-        descrizione: "Venha tirar uma foto de lembrança nesta ilhota",
-        immagine: "/images/vivere-su-un-isola.jpg"
-    },
-];
 
-let slides2 = [
-    {
-        titolo: "Aqui está um possível cenário ocidental que pode ser personalizado conforme desejado",
-        descrizione: "A equipe irá construí-lo e usar roupas e usos para tornar seu sonho completamente real",
-        immagine: "/images/western.jpg"
-    },
-    {
-        titolo: "Um possível cenário espacial 100% personalizável",
-        descrizione: "A equipe usará fantasias e ferramentas de mudança de voz para tornar sua experiência super espaçosa... mesmo com blasters",
-        immagine: "/images/spazio.jpg"
-    },
-    {
-        titolo: "Aqui está um possível cenário de crime",
-        descrizione: "Vai se tornar uma mistura de intrigas e mistérios a serem resolvidos para torná-lo o detetive mais astuto",
-        immagine: "/images/crime.jpg"
-    }
-]
 
 
 
