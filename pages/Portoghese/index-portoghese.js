@@ -229,6 +229,8 @@ export default function Home({ datiArticoli }) {
                 products={trasporti}
             />
 
+            <Carousel slides={slides2} />
+
             <Paragraph title="Preços" sx={{ textAlign: 'center', width: '100%', p: 0 }}>
                 <Grid container
                     sx={{ width: '100%' }}
@@ -257,6 +259,8 @@ export default function Home({ datiArticoli }) {
                     </Grid>
                 </Grid>
             </Paragraph>
+
+            <Carousel slides={slides} />
 
             <Team
                 title="Contatos"
