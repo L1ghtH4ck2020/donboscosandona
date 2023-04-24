@@ -9,6 +9,7 @@ import Team from '/components/Team'
 import Maps from '/components/Maps'
 import Paragraph from '/components/Paragraph'
 import Footer from '/components/Footer'
+import Carousel from '/components/Carousel'
 
 import Lista from '/components/List.js'
 
