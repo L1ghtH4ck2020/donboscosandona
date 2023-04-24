@@ -137,21 +137,21 @@ let liste3 = [
 ]
 let slides = [
     {
-      titolo: "Vieni a scorpire alcuni alloggi per la notte",
-      descrizione: "Sembrano piccoli ma sono molto accolglienti",
-      immagine: "/images/caribi.jpg",
+        titolo: "Vieni a scorpire alcuni alloggi per la notte",
+        descrizione: "Sembrano piccoli ma sono molto accolglienti",
+        immagine: "/images/caribi.jpg",
     },
     {
-      titolo: "Ecco piccoli villagi da visitare con la famiglia",
-      descrizione: "Divertiti ad ammirare i pesci proprio accanto a te",
-      immagine: "/images/caraibi-2.jpg"
+        titolo: "Ecco piccoli villagi da visitare con la famiglia",
+        descrizione: "Divertiti ad ammirare i pesci proprio accanto a te",
+        immagine: "/images/caraibi-2.jpg"
     },
     {
         titolo: "E per qualcuno che vuole qualcosa di romantico...",
         descrizione: "Vieni a farti fare una foto ricordo su quest'isoletta",
         immagine: "/images/vivere-su-un-isola.jpg"
-      },
-  ];
+    },
+];
 
 let slides2 = [
     {
@@ -169,7 +169,7 @@ let slides2 = [
         descrizione: "Diventera un mix tra intrighi e misteri da risolvere per farti diventare il detecive più astuto",
         immagine: "/images/crime.jpg"
     }
-  ]
+]
 
 
 let images = [
@@ -180,7 +180,7 @@ const menuFooter = [
     { title: 'Chi siamo', url: '/chi_siamo' },
     { title: 'Dove siamo', url: '/dove-siamo' },
     { title: 'Privacy', url: '/privacy' },
-    {title: 'Home', url:'/'}
+    { title: 'Home', url: '/' }
 ]
 
 const socials = [
@@ -235,11 +235,11 @@ export default function Home({ datiArticoli }) {
                 products={trasporti}
             />
 
-            <Carousel slides={slides2}/>
+            <Carousel slides={slides2} />
 
-            <Paragraph title="Prezzi" sx={{ textAlign: 'center', width:'100%', p:0 }} xs={100} >
+            <Paragraph title="Prezzi" sx={{ textAlign: 'center', width: '100%', p: 0 }} xs={100} >
                 <Grid container
-                    sx={{ width:'100%' }}
+                    sx={{ width: '100%' }}
                 >
                     <Grid item>
                         <Paragraph title="Epoca" sx={{ textAlign: 'center' }}>
@@ -267,7 +267,7 @@ export default function Home({ datiArticoli }) {
             </Paragraph>
             {/* immagini*/}
 
-            <Carousel slides={slides}/>
+            <Carousel slides={slides} />
 
             <Team
                 title="Contatti"
@@ -283,18 +283,18 @@ export default function Home({ datiArticoli }) {
                 url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23578.90449201762!2d-8.954811645063147!3d42.37741165896341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f44afad207c8b%3A0x299878e0962187e5!2sIsola%20di%20Ons!5e0!3m2!1sit!2sit!4v1681717640180!5m2!1sit!2sit"
             />
             <Footer
-    color="#00000F"
-    opacitycolor="1"
-    opacity={1}
-    title1="About us"
-    description1="Siamo un'associazione che acchiappa i sogni delle persone e li realizza!! La nostra isola si trova in Spagna, più precisamnete nell'isola di Ons."
-    title2="Social"
-    socials={socials}
-    images={images}
-    menu={menuFooter}
-    menu2={menu2}
-    copyright="Copyright (C) 2023 9dreams Agency."
-/>
+                color="#00000F"
+                opacitycolor="1"
+                opacity={1}
+                title1="About us"
+                description1="Siamo un'associazione che acchiappa i sogni delle persone e li realizza!! La nostra isola si trova in Spagna, più precisamnete nell'isola di Ons."
+                title2="Social"
+                socials={socials}
+                images={images}
+                menu={menuFooter}
+                menu2={menu2}
+                copyright="Copyright (C) 2023 9dreams Agency."
+            />
 
         </Layout >
     )

@@ -9,7 +9,7 @@ import Team from '/components/Team'
 import Maps from '/components/Maps'
 import Paragraph from '/components/Paragraph'
 import Footer from '/components/Footer'
-
+import Carousel from '/components/Carousel'
 
 import Lista from '/components/List.js'
 
@@ -131,42 +131,6 @@ let trasporti = [
     },
 
 ]
-let slides = [
-    {
-      titolo: "Ven y descubre algunos alojamientos para pasar la noche",
-      descrizione: "Se ven pequeños pero son muy acogedores.",
-      immagine: "/images/caribi.jpg",
-    },
-    {
-      titolo: "Aquí hay pequeños pueblos para visitar en familia",
-      descrizione: "Disfruta admirando los peces a tu lado.",
-      immagine: "/images/caraibi-2.jpg"
-    },
-    {
-        titolo: "Y para alguien que quiere algo romántico...",
-        descrizione: "Ven y tómate una foto de recuerdo en este islote",
-        immagine: "/images/vivere-su-un-isola.jpg"
-      },
-  ];
-
-let slides2 = [
-    {
-        titolo: "Aquí hay un posible escenario occidental que se puede personalizar como se desee.",
-        descrizione: "El personal lo construirá y vestirá y usará para hacer su sueño completamente real.",
-        immagine: "/images/western.jpg"
-    },
-    {
-        titolo: "Un posible escenario espacial 100% personalizable",
-        descrizione: "El personal usará disfraces y herramientas de cambio de voz para que su experiencia sea súper espaciosa... incluso con blásters.",
-        immagine: "/images/spazio.jpg"
-    },
-    {
-        titolo: "Aquí hay un posible escenario de crimen.",
-        descrizione: "Se convertirá en una mezcla de intriga y misterios por resolver para convertirte en el detective más astuto.",
-        immagine: "/images/crime.jpg"
-    }
-  ]
-
 
 let liste = [
     { elemento: "época romana - 150€" },
@@ -195,7 +159,41 @@ let liste3 = [
     { elemento: "6 meses - 6700€" },
 ]
 
+let slides = [
+    {
+        titolo: "Ven a escorpitar algunos alojamientos para la noche",
+        descrizione: "Parecen pequeños, pero son muy acogedores.",
+        immagine: "/images/caribi.jpg",
+    },
+    {
+        titolo: "Aquí hay pequeños pueblos para visitar con la familia",
+        descrizione: "Diviértete viendo los peces a tu lado",
+        immagine: "/images/caraibi-2.jpg"
+    },
+    {
+        titolo: "Y para alguien que quiere algo romántico...",
+        descrizione: "Ven a hacerte una foto recuerdo de esta pequeña isla.",
+        immagine: "/images/vivere-su-un-isola.jpg"
+    },
+];
 
+let slides2 = [
+    {
+        titolo: "Aquí hay un posible escenario wester personalizable a gusto",
+        descrizione: "El personal lo construirá y usará ropa y ropa para hacer tu sueño realidad.",
+        immagine: "/images/western.jpg"
+    },
+    {
+        titolo: "Un posible escenario espacial 100% personalizable",
+        descrizione: "El personal usará disfraces y trajes para cambiar la voz para hacer que tu experiencia sea muy espacial.. incluso con blasters",
+        immagine: "/images/spazio.jpg"
+    },
+    {
+        titolo: "Aquí hay un posible escenario de crimen",
+        descrizione: "Conviértete en una mezcla de intrigas y misterios que resolver para convertirte en el detective más astuto",
+        immagine: "/images/crime.jpg"
+    }
+]
 
 export default function Home({ datiArticoli }) {
     return (
